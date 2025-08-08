@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsau8jswy76la"]
+
+[ext_resource type="Script" uid="uid://b4jvm64bxbuyi" path="res://scripts/ejemplo_basico.gd" id="1_xkqc8"]
+[ext_resource type="Texture2D" uid="uid://dq174apvbno6h" path="res://icon.svg" id="2_4expk"]
+[ext_resource type="AudioStream" uid="uid://bphxavhbwt5eh" path="res://assets/425556__t_roy_920__rock-808-beat.mp3" id="3_4expk"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1153.0
+offset_bottom = 650.0
+script = ExtResource("1_xkqc8")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 71.0
+offset_right = 247.0
+offset_bottom = 207.0
+icon = ExtResource("2_4expk")
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 489.0
+offset_top = 81.0
+offset_right = 625.0
+offset_bottom = 217.0
+icon = ExtResource("2_4expk")
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 895.0
+offset_top = 85.0
+offset_right = 1031.0
+offset_bottom = 221.0
+icon = ExtResource("2_4expk")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_4expk")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_4expk")
+pitch_scale = 0.38
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_4expk")
+pitch_scale = 1.75
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

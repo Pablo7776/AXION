@@ -1,0 +1,12 @@
+## Godot 4+ specific ignores
+.godot/        # Configuración interna del editor
+/android/      # Carpeta de exportación Android generada
+
+# Archivos temporales y cache de Godot
+.import/       
+.cache/        
+*.tmp
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db

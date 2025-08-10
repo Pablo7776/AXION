@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsmscx8441l7t"]
+
+[ext_resource type="Script" uid="uid://0ugwblm3fuf1" path="res://PROTOTIPO2/scripts/bolitas.gd" id="1_apfb5"]
+[ext_resource type="Texture2D" uid="uid://dq174apvbno6h" path="res://icon.svg" id="2_nh0e5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1v6jn"]
+radius = 39.2046
+
+[node name="Bolita" type="Area2D"]
+script = ExtResource("1_apfb5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1v6jn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_nh0e5")

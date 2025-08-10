@@ -1,38 +1,31 @@
-[gd_scene load_steps=4 format=3 uid="uid://bsau8jswy76la"]
+[gd_scene load_steps=5 format=3 uid="uid://bsau8jswy76la"]
 
 [ext_resource type="Script" uid="uid://b4jvm64bxbuyi" path="res://scripts/ejemplo_basico.gd" id="1_xkqc8"]
 [ext_resource type="Texture2D" uid="uid://dq174apvbno6h" path="res://icon.svg" id="2_4expk"]
 [ext_resource type="AudioStream" uid="uid://bphxavhbwt5eh" path="res://assets/425556__t_roy_920__rock-808-beat.mp3" id="3_4expk"]
+[ext_resource type="Texture2D" uid="uid://ddbjwtdmmrndy" path="res://assets/png boceto basico del mimido.png" id="4_kc1pj"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1153.0
-offset_bottom = 650.0
+offset_right = 1743.0
+offset_bottom = 1093.0
 script = ExtResource("1_xkqc8")
 
-[node name="Button" type="Button" parent="."]
+[node name="Button6" type="Button" parent="."]
 layout_mode = 0
-offset_left = 111.0
-offset_top = 71.0
-offset_right = 247.0
-offset_bottom = 207.0
-icon = ExtResource("2_4expk")
-
-[node name="Button2" type="Button" parent="."]
-layout_mode = 0
-offset_left = 489.0
-offset_top = 81.0
-offset_right = 625.0
-offset_bottom = 217.0
+offset_left = 8.0
+offset_top = 405.0
+offset_right = 144.0
+offset_bottom = 541.0
 icon = ExtResource("2_4expk")
 
 [node name="Button3" type="Button" parent="."]
 layout_mode = 0
-offset_left = 895.0
-offset_top = 85.0
-offset_right = 1031.0
-offset_bottom = 221.0
+offset_left = 1245.0
+offset_top = 686.0
+offset_right = 1381.0
+offset_bottom = 822.0
 icon = ExtResource("2_4expk")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -46,6 +39,81 @@ pitch_scale = 0.38
 stream = ExtResource("3_4expk")
 pitch_scale = 1.75
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -74.0
+offset_right = 2058.0
+offset_bottom = 413.0
+color = Color(0.581292, 0.101683, 4.81308e-08, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -68.0
+offset_top = 412.0
+offset_right = 2064.0
+offset_bottom = 1079.0
+color = Color(0.00830946, 0.275209, 0.310092, 1)
+
+[node name="Polygon2D" type="Polygon2D" parent="ColorRect2"]
+polygon = PackedVector2Array(977, 8, 70, 658, 508, 655)
+
+[node name="Polygon2D2" type="Polygon2D" parent="ColorRect2"]
+position = Vector2(68, -412)
+color = Color(0.760999, 0.760999, 0.760999, 1)
+polygon = PackedVector2Array(905, 411, 1738, 1076, 1356, 1080)
+
+[node name="Polygon2D3" type="Polygon2D" parent="ColorRect2"]
+position = Vector2(96.528, -405.332)
+scale = Vector2(0.959808, 0.983776)
+polygon = PackedVector2Array(905, 411, 719.386, 1089, 1083, 1089)
+
+[node name="Line2D" type="Line2D" parent="."]
+visible = false
+points = PackedVector2Array(907, 415, 0, 1078)
+default_color = Color(0.309385, 0.309385, 0.309385, 1)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 771.0
+offset_top = 270.0
+offset_right = 907.0
+offset_bottom = 406.0
+scale = Vector2(2, 2)
+icon = ExtResource("2_4expk")
+
+[node name="Line2D2" type="Line2D" parent="."]
+points = PackedVector2Array(905, 415, 1730, 1068)
+default_color = Color(0.277528, 0.277528, 0.277528, 1)
+
+[node name="Button2" type="Button" parent="Line2D2"]
+offset_left = 247.0
+offset_top = 902.0
+offset_right = 383.0
+offset_bottom = 1038.0
+icon = ExtResource("2_4expk")
+
+[node name="Button4" type="Button" parent="Line2D2"]
+offset_left = 841.0
+offset_top = 904.0
+offset_right = 977.0
+offset_bottom = 1040.0
+icon = ExtResource("2_4expk")
+
+[node name="Button5" type="Button" parent="Line2D2"]
+offset_left = 1413.0
+offset_top = 913.0
+offset_right = 1549.0
+offset_bottom = 1049.0
+icon = ExtResource("2_4expk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(882, 446)
+scale = Vector2(0.242281, 0.235079)
+texture = ExtResource("4_kc1pj")
+
+[connection signal="pressed" from="Button6" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Line2D2/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Line2D2/Button4" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Line2D2/Button5" to="." method="_on_button_2_pressed"]

@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://ifprnft5fay1"]
+
+[ext_resource type="Script" uid="uid://bjgw13kbaumtk" path="res://PROTOTIPO2/scripts/main.gd" id="1_7ngdm"]
+[ext_resource type="Texture2D" uid="uid://dq174apvbno6h" path="res://icon.svg" id="2_qjvgp"]
+[ext_resource type="AudioStream" uid="uid://bphxavhbwt5eh" path="res://assets/425556__t_roy_920__rock-808-beat.mp3" id="3_ww5mo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h0ro7"]
+size = Vector2(1267, 153)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_7ngdm")
+
+[node name="Spawner" type="Marker2D" parent="."]
+position = Vector2(1000, 100)
+
+[node name="Linea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Linea"]
+position = Vector2(1074, 849)
+shape = SubResource("RectangleShape2D_h0ro7")
+
+[node name="Sprite2D" type="Sprite2D" parent="Linea"]
+position = Vector2(1066, 851)
+scale = Vector2(9.85547, 1.17969)
+texture = ExtResource("2_qjvgp")
+
+[node name="Bolitas" type="Node2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.8
+
+[node name="Musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ww5mo")

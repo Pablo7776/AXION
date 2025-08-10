@@ -1,3 +1,6 @@
-res://ejemploBasico.tscn
-res://scripts/ejemplo_basico.gd
 res://escenas/ejemploBasico.tscn
+res://PROTOTIPO2/escenas/Bolitas.tscn
+res://PROTOTIPO2/scripts/bolitas.gd
+res://PROTOTIPO2/escenas/main.tscn
+res://PROTOTIPO2/escenas/Bolita.tscn
+res://PROTOTIPO2/scripts/main.gd

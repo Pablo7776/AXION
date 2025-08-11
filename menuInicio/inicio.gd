@@ -1,0 +1,12 @@
+extends Control
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://escenas/ejemploBasico.tscn")
+
+
+func _on_button_2_pressed() -> void:
+	get_tree().change_scene_to_file("res://PROTOTIPO2/escenas/main.tscn")
+
+
+func _on_salir_pressed() -> void:
+	get_tree().quit()

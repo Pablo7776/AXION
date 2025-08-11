@@ -1,17 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1754853477
+::res://::1754926152
 export_presets.cfg::TextFile/TextFile::-1::1754706492::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::8337952126813218997::1754599330::1754851978::1::::<><><>0<>0<>f848ac66ef2829b5071bb77d66777551<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://assets/::1754854174
+::res://assets/::1754854217
 425556__t_roy_920__rock-808-beat.mp3::AudioStreamMP3/AudioStreamMP3::3455101587255234271::1754602454::1754854217::1::::<><><>0<>0<>68ca28f13423bb7cb0c764f52cba8294<>res://.godot/imported/425556__t_roy_920__rock-808-beat.mp3-78b5ea38ab84000cc37558e0a9d114e0.mp3str::
 png boceto basico del mimido.png::CompressedTexture2D/CompressedTexture2D::7372479703288276410::1754723623::1754851979::1::::<><><>0<>0<>5f09db7d041c910945a5837cd31cd110<>res://.godot/imported/png boceto basico del mimido.png-906710829b1d2c038106dbc8e2f22947.ctex::
 ::res://escenas/::1754851997
 ejemploBasico.tscn::PackedScene::3651093641781450930::1754851997::0::1::::<><><>0<>0<><>::uid://b4jvm64bxbuyi::::res://scripts/ejemplo_basico.gd<>uid://dq174apvbno6h::::res://icon.svg<>uid://bphxavhbwt5eh::::res://assets/425556__t_roy_920__rock-808-beat.mp3<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png
 ::res://prototipo1/::1754851969
 ::res://PROTOTIPO2/::1754852589
-::res://PROTOTIPO2/escenas/::1754854189
-Bolita.tscn::PackedScene::3675690140057023231::1754854189::0::1::::<><><>0<>0<><>::uid://0ugwblm3fuf1::::res://PROTOTIPO2/scripts/bolitas.gd<>uid://dq174apvbno6h::::res://icon.svg
-main.tscn::PackedScene::572774442693572594::1754854189::0::1::::<><><>0<>0<><>::uid://bjgw13kbaumtk::::res://PROTOTIPO2/scripts/main.gd<>uid://dq174apvbno6h::::res://icon.svg<>uid://bphxavhbwt5eh::::res://assets/425556__t_roy_920__rock-808-beat.mp3
+::res://PROTOTIPO2/escenas/::1754854648
+Bolita.tscn::PackedScene::3675690140057023231::1754854648::0::1::::<><><>0<>0<><>::uid://0ugwblm3fuf1::::res://PROTOTIPO2/scripts/bolitas.gd<>uid://dq174apvbno6h::::res://icon.svg
+main.tscn::PackedScene::572774442693572594::1754854648::0::1::::<><><>0<>0<><>::uid://bjgw13kbaumtk::::res://PROTOTIPO2/scripts/main.gd<>uid://dq174apvbno6h::::res://icon.svg<>uid://bphxavhbwt5eh::::res://assets/425556__t_roy_920__rock-808-beat.mp3
 ::res://PROTOTIPO2/scripts/::1754853189
 bolitas.gd::GDScript::1796412305553572668::1754852636::0::1::::<>Area2D<><>0<>0<><>::
 main.gd::GDScript::3031890233590224896::1754853189::0::1::::<>Node2D<><>0<>0<><>::

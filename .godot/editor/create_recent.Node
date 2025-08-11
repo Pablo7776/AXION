@@ -1,5 +1,9 @@
-AudioStreamPlayer2D
 Sprite2D
+TextEdit
+ColorRect
+Button
+VBoxContainer
+AudioStreamPlayer2D
 Timer
 Node2D
 CollisionShape2D
@@ -7,7 +11,4 @@ Area2D
 Marker2D
 Polygon2D
 Line2D
-ColorRect
 AudioStreamPlayer
-Button
-Control

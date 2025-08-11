@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bsau8jswy76la"]
+[gd_scene load_steps=6 format=3 uid="uid://bsau8jswy76la"]
 
 [ext_resource type="Script" uid="uid://b4jvm64bxbuyi" path="res://scripts/ejemplo_basico.gd" id="1_xkqc8"]
 [ext_resource type="Texture2D" uid="uid://dq174apvbno6h" path="res://icon.svg" id="2_4expk"]
 [ext_resource type="AudioStream" uid="uid://bphxavhbwt5eh" path="res://assets/425556__t_roy_920__rock-808-beat.mp3" id="3_4expk"]
 [ext_resource type="Texture2D" uid="uid://ddbjwtdmmrndy" path="res://assets/png boceto basico del mimido.png" id="4_kc1pj"]
+[ext_resource type="PackedScene" uid="uid://c05gqgpyktbf3" path="res://menuInicio/botonVolver.tscn" id="5_pdv2j"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -110,6 +111,22 @@ icon = ExtResource("2_4expk")
 position = Vector2(882, 446)
 scale = Vector2(0.242281, 0.235079)
 texture = ExtResource("4_kc1pj")
+
+[node name="volver" parent="." instance=ExtResource("5_pdv2j")]
+layout_mode = 1
+offset_left = 1598.0
+offset_top = 45.0
+offset_right = -36.0
+offset_bottom = -940.0
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 48.0
+offset_right = 807.0
+offset_bottom = 200.0
+theme_override_font_sizes/font_size = 55
+text = "botones que inician audio"
 
 [connection signal="pressed" from="Button6" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://gfv4q47umgx0"]
+
+[ext_resource type="Script" uid="uid://bn3gnqlvi02lg" path="res://menuInicio/inicio.gd" id="1_ocxu5"]
+[ext_resource type="Texture2D" uid="uid://ddbjwtdmmrndy" path="res://assets/png boceto basico del mimido.png" id="2_qrfih"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ocxu5")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1753.0
+offset_bottom = 1223.0
+color = Color(0.134223, 0.0612999, 0.142719, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(920, 538)
+scale = Vector2(0.490995, 0.592147)
+texture = ExtResource("2_qrfih")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 493.0
+offset_top = 392.0
+offset_right = 1373.0
+offset_bottom = 798.0
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 55
+text = "proto 1"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 55
+text = "proto 2"
+
+[node name="salir" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 55
+text = "salir"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/salir" to="." method="_on_salir_pressed"]

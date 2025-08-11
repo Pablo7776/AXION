@@ -1,6 +1,7 @@
-res://escenas/ejemploBasico.tscn
-res://PROTOTIPO2/escenas/Bolitas.tscn
-res://PROTOTIPO2/scripts/bolitas.gd
+res://menuInicio/inicio.tscn
+res://menuInicio/inicio.gd
 res://PROTOTIPO2/escenas/main.tscn
 res://PROTOTIPO2/escenas/Bolita.tscn
-res://PROTOTIPO2/scripts/main.gd
+res://menuInicio/botonVolver.tscn
+res://menuInicio/boton_volver.gd
+res://escenas/ejemploBasico.tscn

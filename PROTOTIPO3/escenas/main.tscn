@@ -22,36 +22,31 @@ color = Color(0.00784314, 0.27451, 0.309804, 1)
 [node name="Spawner" type="Marker2D" parent="."]
 visible = false
 position = Vector2(687, 214)
-rotation = 1.74533
 
 [node name="SpawnerNorte" type="Marker2D" parent="."]
-visible = false
 position = Vector2(650, 411)
 rotation = 1.22173
 
 [node name="SpawnerSur" type="Marker2D" parent="."]
-visible = false
 position = Vector2(635, 385)
 rotation = 1.5708
 
 [node name="SpawnerEste" type="Marker2D" parent="."]
-visible = false
 position = Vector2(668, 398)
 rotation = 1.91986
 
 [node name="SpawnerOeste" type="Marker2D" parent="."]
-visible = false
 position = Vector2(623, 405)
 rotation = 1.5708
 
 [node name="Linea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Linea"]
-position = Vector2(678, 726.562)
+position = Vector2(678, 858)
 shape = SubResource("RectangleShape2D_h0ro7")
 
 [node name="Sprite2D" type="Sprite2D" parent="Linea"]
-position = Vector2(671, 726)
+position = Vector2(667, 857)
 scale = Vector2(6.70117, 0.480469)
 texture = ExtResource("2_qjvgp")
 
@@ -79,9 +74,10 @@ offset_top = 810.0
 offset_right = 1713.0
 offset_bottom = 929.0
 theme_override_font_sizes/font_size = 40
-text = "(usar barra espaciadora)"
+text = "(usar barra espaciadora) 
+aun no funciona"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(679, 193)
+position = Vector2(652, 217)
 scale = Vector2(0.160163, 0.0755236)
 texture = ExtResource("5_k1yt2")

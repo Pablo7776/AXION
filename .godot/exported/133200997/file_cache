@@ -1,1 +1,5 @@
-res://escenas/ejemploBasico.tscn::0acf4a3f9deb88dc61dc70582a2e85eb::1754706351::res://.godot/exported/133200997/export-993bb5293d31365cfc6343d039781798-ejemploBasico.scn
+res://escenas/ejemploBasico.tscn::b9155bf3ece0397eb457bce5684a83f4::1754945220::res://.godot/exported/133200997/export-993bb5293d31365cfc6343d039781798-ejemploBasico.scn
+res://menuInicio/inicio.tscn::7d3125359e47091c7285817b535f2dde::1754945220::res://.godot/exported/133200997/export-b1e721c65823cf0a2bcf332c9cbb6cfc-inicio.scn
+res://menuInicio/botonVolver.tscn::ac1d63d07d95d2d933de9d80c81be087::1754945220::res://.godot/exported/133200997/export-9ae458880cd03d5ea858b6c9df51d7f6-botonVolver.scn
+res://PROTOTIPO2/escenas/Bolita.tscn::6d623b00e55b635d87a23acd70854e6f::1754945220::res://.godot/exported/133200997/export-4037d08d0e427d51020a66651490e47a-Bolita.scn
+res://PROTOTIPO2/escenas/main.tscn::c46b34752278c9cf51a3d64f4ffd4318::1754945220::res://.godot/exported/133200997/export-f24cc99c49eb473c123d746068e140d3-main.scn

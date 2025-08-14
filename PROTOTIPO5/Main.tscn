@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://dq52btfdshp6o"]
+
+[ext_resource type="Script" uid="uid://b0kf8qmblys7x" path="res://PROTOTIPO5/main.gd" id="1_on1ap"]
+[ext_resource type="PackedScene" uid="uid://d3phyav16xrbj" path="res://PROTOTIPO6efectos/efecto.tscn" id="2_pbtkh"]
+[ext_resource type="Texture2D" uid="uid://ddbjwtdmmrndy" path="res://assets/png boceto basico del mimido.png" id="2_sniqo"]
+[ext_resource type="AudioStream" uid="uid://cm13lq8k5low" path="res://assets/758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3" id="3_rwtty"]
+[ext_resource type="AudioStream" uid="uid://ddjhbai8eqqmx" path="res://assets/tambor.mp3" id="4_fxfcp"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_on1ap")
+
+[node name="Efecto" parent="." instance=ExtResource("2_pbtkh")]
+
+[node name="Linea" type="Node2D" parent="."]
+position = Vector2(743, 832)
+
+[node name="ColorRect" type="ColorRect" parent="Linea"]
+offset_left = -23.0
+offset_top = 29.0
+offset_right = 310.0
+offset_bottom = 48.0
+color = Color(0.196143, 0.196143, 0.196143, 1)
+
+[node name="Spawner" type="Node2D" parent="."]
+position = Vector2(349, 261)
+
+[node name="Notas" type="Node2D" parent="."]
+position = Vector2(505, 232)
+
+[node name="PngBocetoBasicoDelMimido" type="Sprite2D" parent="."]
+position = Vector2(876, 364)
+scale = Vector2(0.129717, 0.123822)
+texture = ExtResource("2_sniqo")
+
+[node name="Musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_rwtty")
+
+[node name="Tambor" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_fxfcp")
+volume_db = 24.0
+pitch_scale = 3.01
+attenuation = 0.143588
+bus = &"TAMBOR"
+
+[node name="volver" type="Button" parent="."]
+offset_left = 1564.0
+offset_top = 44.0
+offset_right = 1680.0
+offset_bottom = 151.0
+theme_override_font_sizes/font_size = 40
+text = "x"
+
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]

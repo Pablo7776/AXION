@@ -1,25 +1,44 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1754964101
-export_presets.cfg::TextFile::-1::1754949501::0::1::::<><><>0<>0<><>::
+::res://::1755185696
+export_presets.cfg::TextFile/TextFile::-1::1755013644::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::8337952126813218997::1754599330::1754851978::1::::<><><>0<>0<>f848ac66ef2829b5071bb77d66777551<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://assets/::1754965605
+::res://assets/::1755188403
 425556__t_roy_920__rock-808-beat.mp3::AudioStreamMP3/AudioStreamMP3::3455101587255234271::1754602454::1754854217::1::::<><><>0<>0<>68ca28f13423bb7cb0c764f52cba8294<>res://.godot/imported/425556__t_roy_920__rock-808-beat.mp3-78b5ea38ab84000cc37558e0a9d114e0.mp3str::
-758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3::AudioStreamMP3::166779468353694158::1754965543::1754965632::1::::<><><>0<>0<>d01ed87a0304c6f9bc7eecff0a16b2a8<>res://.godot/imported/758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3-f1b862c0a82bb4bd5f32f3aff97e1281.mp3str::
+758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3::AudioStreamMP3/AudioStreamMP3::166779468353694158::1754965543::1754965632::1::::<><><>0<>0<>d01ed87a0304c6f9bc7eecff0a16b2a8<>res://.godot/imported/758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3-f1b862c0a82bb4bd5f32f3aff97e1281.mp3str::
 png boceto basico del mimido.png::CompressedTexture2D/CompressedTexture2D::7372479703288276410::1754723623::1754851979::1::::<><><>0<>0<>5f09db7d041c910945a5837cd31cd110<>res://.godot/imported/png boceto basico del mimido.png-906710829b1d2c038106dbc8e2f22947.ctex::
-::res://escenas/::1754964982
-ejemploBasico.tscn::PackedScene::3651093641781450930::1754964982::0::1::::<><><>0<>0<><>::uid://b4jvm64bxbuyi::::res://scripts/ejemplo_basico.gd<>uid://dq174apvbno6h::::res://icon.svg<>uid://bphxavhbwt5eh::::res://assets/425556__t_roy_920__rock-808-beat.mp3<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png<>uid://c05gqgpyktbf3::::res://menuInicio/botonVolver.tscn
-::res://menuInicio/::1754964982
-botonVolver.tscn::PackedScene::6589887005034610882::1754964982::0::1::::<><><>0<>0<><>::uid://curfp4hw8inf0::::res://menuInicio/boton_volver.gd
+tambor.mp3::AudioStreamMP3::7388834800387005903::1755188403::1755188407::1::::<><><>0<>0<>8aed57ad82e38c4f9efd7ed4d5a3c912<>res://.godot/imported/tambor.mp3-53913095c8c6181e4002b1e65574419d.mp3str::
+::res://escenas/::1754968538
+ejemploBasico.tscn::PackedScene/PackedScene::3651093641781450930::1754968538::0::1::::<><><>0<>0<><>::uid://b4jvm64bxbuyi::::res://scripts/ejemplo_basico.gd<>uid://dq174apvbno6h::::res://icon.svg<>uid://bphxavhbwt5eh::::res://assets/425556__t_roy_920__rock-808-beat.mp3<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png<>uid://c05gqgpyktbf3::::res://menuInicio/botonVolver.tscn
+::res://menuInicio/::1755139691
+botonVolver.tscn::PackedScene/PackedScene::6589887005034610882::1754968538::0::1::::<><><>0<>0<><>::uid://curfp4hw8inf0::::res://menuInicio/boton_volver.gd
 boton_volver.gd::GDScript/GDScript::6212044568873064903::1754940758::0::1::::<>Button<><>0<>0<><>::
-inicio.gd::GDScript/GDScript::3357066603710857872::1754940177::0::1::::<>Control<><>0<>0<><>::
-inicio.tscn::PackedScene::432782682123900959::1754964982::0::1::::<><><>0<>0<><>::uid://bn3gnqlvi02lg::::res://menuInicio/inicio.gd<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png
+inicio.gd::GDScript/GDScript::3357066603710857872::1754969214::0::1::::<>Control<><>0<>0<><>::
+inicio.tscn::PackedScene/PackedScene::432782682123900959::1755139691::0::1::::<><><>0<>0<><>::uid://bn3gnqlvi02lg::::res://menuInicio/inicio.gd<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png
 ::res://prototipo1/::1754851969
 ::res://PROTOTIPO2/::1754852589
-::res://PROTOTIPO2/escenas/::1754964982
-Bolita.tscn::PackedScene::3675690140057023231::1754964982::0::1::::<><><>0<>0<><>::uid://0ugwblm3fuf1::::res://PROTOTIPO2/scripts/bolitas.gd<>uid://dq174apvbno6h::::res://icon.svg
-main.tscn::PackedScene::572774442693572594::1754964982::0::1::::<><><>0<>0<><>::uid://bjgw13kbaumtk::::res://PROTOTIPO2/scripts/main.gd<>uid://dq174apvbno6h::::res://icon.svg<>uid://bphxavhbwt5eh::::res://assets/425556__t_roy_920__rock-808-beat.mp3<>uid://c05gqgpyktbf3::::res://menuInicio/botonVolver.tscn<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png
-::res://PROTOTIPO2/scripts/::1754964500
-bolitas.gd::GDScript/GDScript::1796412305553572668::1754852636::0::1::::<>Area2D<><>0<>0<><>::
-main.gd::GDScript::3031890233590224896::1754964500::0::1::::<>Node2D<><>0<>0<><>::
+::res://PROTOTIPO2/escenas/::1755139691
+Bolita.tscn::PackedScene/PackedScene::3675690140057023231::1755139691::0::1::::<><><>0<>0<><>::uid://0ugwblm3fuf1::::res://PROTOTIPO3/scripts/bolitas.gd<>uid://dq174apvbno6h::::res://icon.svg
+main.tscn::PackedScene/PackedScene::572774442693572594::1755139691::0::1::::<><><>0<>0<><>::uid://bjgw13kbaumtk::::res://PROTOTIPO3/scripts/main.gd<>uid://dq174apvbno6h::::res://icon.svg<>uid://cm13lq8k5low::::res://assets/758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3<>uid://c05gqgpyktbf3::::res://menuInicio/botonVolver.tscn<>uid://deft1nu613rje::::res://PROTOTIPO4/cuadradoMagicoInverso.tscn<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png<>uid://bxmd827o8qhux::::res://PROTOTIPO4/cuadradoMagico.tscn
+::res://PROTOTIPO2/scripts/::1754970360
+bolitas.gd::GDScript/GDScript::1796412305553572668::1754970360::0::1::::<>Area2D<><>0<>0<><>::
+main.gd::GDScript/GDScript::3031890233590224896::1754970130::0::1::::<>Node2D<><>0<>0<><>::
+::res://PROTOTIPO3/::1754852589
+::res://PROTOTIPO3/escenas/::1755012932
+Bolita.tscn::PackedScene/PackedScene::3675690140057023231::1755012932::0::1::::<><><>0<>0<><>::uid://0ugwblm3fuf1::::res://PROTOTIPO3/scripts/bolitas.gd<>uid://dq174apvbno6h::::res://icon.svg
+main.tscn::PackedScene/PackedScene::572774442693572594::1755012932::0::1::::<><><>0<>0<><>::uid://bjgw13kbaumtk::::res://PROTOTIPO3/scripts/main.gd<>uid://dq174apvbno6h::::res://icon.svg<>uid://cm13lq8k5low::::res://assets/758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3<>uid://c05gqgpyktbf3::::res://menuInicio/botonVolver.tscn<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png
+::res://PROTOTIPO3/scripts/::1754968942
+bolitas.gd::GDScript/GDScript::1796412305553572668::1754968711::0::1::::<>Area2D<><>0<>0<><>::
+main.gd::GDScript/GDScript::3031890233590224896::1754968942::0::1::::<>Node2D<><>0<>0<><>::
+::res://PROTOTIPO4/::1755139691
+cuadradoMagico.tscn::PackedScene/PackedScene::4025779170838752043::1755139691::0::1::::<><><>0<>0<><>::uid://bwvpxlom1sixg::::res://PROTOTIPO4/cuadrado_magico.gd
+cuadradoMagicoInverso.tscn::PackedScene/PackedScene::7451540083049825242::1755139691::0::1::::<><><>0<>0<><>::uid://bwvpxlom1sixg::::res://PROTOTIPO4/cuadrado_magico.gd
+cuadrado_magico.gd::GDScript/GDScript::3974879604681179108::1755012446::0::1::::<>Node2D<><>0<>0<><>::
+RotacionCuadrado.tscn::PackedScene/PackedScene::380337655238309493::1755139691::0::1::::<><><>0<>0<><>::uid://gpj24173ew4f::::res://PROTOTIPO4/rotacion_cuadrado.gd
+rotacion_cuadrado.gd::GDScript/GDScript::452694962343024919::1755011803::0::1::::<>Node2D<><>0<>0<><>::
+::res://PROTOTIPO5/::1755187565
+main.gd::GDScript::4162148927319557935::1755187534::0::1::::<>Node2D<><>0<>0<><>::
+Main.tscn::PackedScene::8345857032336542688::1755187565::0::1::::<><><>0<>0<><>::uid://b0kf8qmblys7x::::res://PROTOTIPO5/main.gd<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png<>uid://cm13lq8k5low::::res://assets/758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3
+Nota.tscn::PackedScene::4755384886596587452::1755187565::0::1::::<><><>0<>0<><>::uid://dq174apvbno6h::::res://icon.svg
+Secuencia.gd::GDScript/GDScript::4165235266111941727::1755059948::0::1::::Secuencia<>Resource<><>0<>0<><>::
 ::res://scripts/::1754795060
 ejemplo_basico.gd::GDScript/GDScript::4441774708456949600::1754795060::0::1::::<>Control<><>0<>0<><>::

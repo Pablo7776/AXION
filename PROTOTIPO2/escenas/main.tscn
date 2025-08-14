@@ -1,10 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://ifprnft5fay1"]
+[gd_scene load_steps=9 format=3 uid="uid://ifprnft5fay1"]
 
 [ext_resource type="Script" uid="uid://bjgw13kbaumtk" path="res://PROTOTIPO3/scripts/main.gd" id="1_7ngdm"]
 [ext_resource type="Texture2D" uid="uid://dq174apvbno6h" path="res://icon.svg" id="2_qjvgp"]
 [ext_resource type="AudioStream" uid="uid://cm13lq8k5low" path="res://assets/758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3" id="3_k1yt2"]
 [ext_resource type="PackedScene" uid="uid://c05gqgpyktbf3" path="res://menuInicio/botonVolver.tscn" id="4_dv33w"]
+[ext_resource type="PackedScene" uid="uid://deft1nu613rje" path="res://PROTOTIPO4/cuadradoMagicoInverso.tscn" id="4_n3b0x"]
 [ext_resource type="Texture2D" uid="uid://ddbjwtdmmrndy" path="res://assets/png boceto basico del mimido.png" id="5_k1yt2"]
+[ext_resource type="PackedScene" uid="uid://bxmd827o8qhux" path="res://PROTOTIPO4/cuadradoMagico.tscn" id="6_k1rfs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h0ro7"]
 size = Vector2(851.5, 58.875)
@@ -54,6 +56,12 @@ shape = SubResource("RectangleShape2D_h0ro7")
 position = Vector2(671, 726)
 scale = Vector2(6.70117, 0.480469)
 texture = ExtResource("2_qjvgp")
+
+[node name="CuadradoMagico" parent="." instance=ExtResource("6_k1rfs")]
+position = Vector2(650, 199)
+
+[node name="CuadradoMagico2" parent="." instance=ExtResource("4_n3b0x")]
+position = Vector2(647, 198)
 
 [node name="Bolitas" type="Node2D" parent="."]
 

@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxmd827o8qhux"]
+
+[ext_resource type="Script" uid="uid://bwvpxlom1sixg" path="res://PROTOTIPO4/cuadrado_magico.gd" id="1_bm5ja"]
+
+[node name="CuadradoMagico" type="Node2D"]
+position = Vector2(865, 307)
+script = ExtResource("1_bm5ja")
+speed_degrees = -45.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -263.0
+offset_top = -228.0
+offset_right = 254.0
+offset_bottom = 238.0
+color = Color(0.118581, 0.118581, 0.118581, 1)

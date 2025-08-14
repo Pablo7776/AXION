@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://d3phyav16xrbj"]
+
+[ext_resource type="Script" uid="uid://dr8ihiqhw7o5x" path="res://PROTOTIPO6efectos/efecto.gd" id="1_ch5bp"]
+[ext_resource type="AudioStream" uid="uid://cm13lq8k5low" path="res://assets/758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3" id="2_lj04k"]
+
+[sub_resource type="Gradient" id="Gradient_ch5bp"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.538106, 1)
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_r4mnm"]
+color_ramp = SubResource("Gradient_ch5bp")
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_lj04k"]
+
+[node name="Efecto" type="Node2D"]
+script = ExtResource("1_ch5bp")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_lj04k")
+autoplay = true
+
+[node name="Sprite2D" type="TextureRect" parent="."]
+offset_left = -1797.0
+offset_top = -703.0
+offset_right = 4253.0
+offset_bottom = 2566.0
+texture = SubResource("NoiseTexture2D_r4mnm")
+stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+offset_right = 1662.0
+offset_bottom = 890.0
+texture = SubResource("NoiseTexture2D_lj04k")

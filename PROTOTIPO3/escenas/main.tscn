@@ -56,6 +56,8 @@ texture = ExtResource("2_qjvgp")
 
 [node name="Musica" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_k1yt2")
+stream_paused = true
+bus = &"TAMBOR"
 
 [node name="volver" parent="." instance=ExtResource("4_dv33w")]
 anchors_preset = 0

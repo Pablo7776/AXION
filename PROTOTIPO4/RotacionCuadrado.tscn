@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://foidudbpopdt"]
+
+[ext_resource type="Script" uid="uid://gpj24173ew4f" path="res://PROTOTIPO4/rotacion_cuadrado.gd" id="1_u5iqo"]
+
+[node name="RotacionCuadrado" type="Node2D"]
+position = Vector2(549, 543)
+script = ExtResource("1_u5iqo")

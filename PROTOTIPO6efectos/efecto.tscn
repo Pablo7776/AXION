@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://d3phyav16xrbj"]
 
 [ext_resource type="Script" uid="uid://dr8ihiqhw7o5x" path="res://PROTOTIPO6efectos/efecto.gd" id="1_ch5bp"]
-[ext_resource type="AudioStream" uid="uid://cm13lq8k5low" path="res://assets/758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3" id="2_lj04k"]
+[ext_resource type="AudioStream" uid="uid://o7xiyndtsxo7" path="res://assets/metronomo60.mp3" id="2_ch5bp"]
 
 [sub_resource type="Gradient" id="Gradient_ch5bp"]
 interpolation_mode = 2
@@ -16,14 +16,14 @@ color_ramp = SubResource("Gradient_ch5bp")
 script = ExtResource("1_ch5bp")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_lj04k")
+stream = ExtResource("2_ch5bp")
 autoplay = true
 
 [node name="Sprite2D" type="TextureRect" parent="."]
-offset_left = -1797.0
-offset_top = -703.0
-offset_right = 4253.0
-offset_bottom = 2566.0
+offset_left = -1725.0
+offset_top = -1466.0
+offset_right = 4325.0
+offset_bottom = 1803.0
 texture = SubResource("NoiseTexture2D_r4mnm")
 stretch_mode = 5
 

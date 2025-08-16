@@ -1,10 +1,8 @@
-res://PROTOTIPO5/Nota.tscn
+res://default_bus_layout.tres
 res://PROTOTIPO5/Main.tscn
 res://PROTOTIPO5/main.gd
-res://PROTOTIPO5/secuencia.gd
+res://PROTOTIPO5/Nota.tscn
 res://PROTOTIPO3/escenas/main.tscn
-res://menuInicio/inicio.gd
 res://menuInicio/inicio.tscn
 res://PROTOTIPO6efectos/efecto.tscn
-res://PROTOTIPO6efectos/efecto.gd
-res://default_bus_layout.tres
+res://PROTOTIPO5/secuencia.gd

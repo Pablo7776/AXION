@@ -28,4 +28,4 @@ func _process(delta: float) -> void:
 
 func disparar_efecto() -> void:
 	# Cambia a un color aleatorio
-	sprite.modulate = Color(randf(), randf(), randf())
+	sprite.modulate = Color(randf(), 0, 0)

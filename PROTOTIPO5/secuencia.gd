@@ -2,34 +2,21 @@ extends Resource
 class_name Secuencia
 
 var data = [
-	{"tiempo": 0.0, "tecla": "space"},
-	{"tiempo": 1.064, "tecla": "space"},
-	{"tiempo": 2.064, "tecla": "space"},
-	{"tiempo": 3.032, "tecla": "space"},
-	{"tiempo": 4.112, "tecla": "space"},
-	{"tiempo": 5.12, "tecla": "space"},
-	{"tiempo": 5.384, "tecla": "space"},
-	{"tiempo": 5.608, "tecla": "space"},
-	{"tiempo": 5.816, "tecla": "space"},
-	{"tiempo": 6.088, "tecla": "space"},
-	{"tiempo": 7.225, "tecla": "space"},
-	{"tiempo": 8.205, "tecla": "space"},
-	{"tiempo": 9.153, "tecla": "space"},
-	{"tiempo": 10.121, "tecla": "space"},
-	{"tiempo": 10.353, "tecla": "space"},
-	{"tiempo": 10.641, "tecla": "space"},
-	{"tiempo": 10.897, "tecla": "space"},
-	{"tiempo": 11.633, "tecla": "space"},
-	{"tiempo": 12.577, "tecla": "space"},
-	{"tiempo": 13.585, "tecla": "space"},
-	{"tiempo": 14.609, "tecla": "space"},
-	{"tiempo": 15.634, "tecla": "space"},
-	{"tiempo": 15.866, "tecla": "space"},
-	{"tiempo": 16.106, "tecla": "space"},
-	{"tiempo": 16.33, "tecla": "space"},
-	{"tiempo": 16.53, "tecla": "space"},
-	{"tiempo": 16.746, "tecla": "space"},
-	{"tiempo": 16.994, "tecla": "space"},
-	{"tiempo": 17.578, "tecla": "space"},
-	{"tiempo": 18.098, "tecla": "space"},
+
+
+	{"tiempo": 3.0, "tecla": "space"},
+	{"tiempo": 4.0, "tecla": "space"},
+	{"tiempo": 5.0, "tecla": "space"},
+	{"tiempo": 6.0, "tecla": "space"},
+	{"tiempo": 7.0, "tecla": "space"},
+	{"tiempo": 8.0, "tecla": "space"},
+	{"tiempo": 9.0, "tecla": "space"},
+	{"tiempo": 10.0, "tecla": "space"},
+	{"tiempo": 11.0, "tecla": "space"},
+	{"tiempo": 12.0, "tecla": "space"},
+	{"tiempo": 13.0, "tecla": "space"},
+	{"tiempo": 14.0, "tecla": "space"},
+
+
+
 ]

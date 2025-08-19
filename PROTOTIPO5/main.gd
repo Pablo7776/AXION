@@ -63,12 +63,57 @@ func _process(delta: float) -> void:
 			print("FALLO")
 		label_aciertos.text = "Aciertos: %d" % aciertos
 		label_pifies.text = "Pifies: %d" % pifies
+		
+		# Detectar fin de la música o si ya pasaron todas las notas
+	if not musica.playing and index_nota >= secuencia_data.data.size() and notas_contenedor.get_child_count() == 0:
+		finalizar_juego()
 
 func spawn_nota(tecla: String) -> void:
 	var n: Node2D = nota_scene.instantiate()
 	n.global_position = spawner.global_position  # POSICIÓN EXACTA DEL SPWANER
 	n.set("tecla", tecla)
 	notas_contenedor.add_child(n)
+
+"""
+func finalizar_juego() -> void:
+	var total_notas: int = secuencia_data.data.size()
+	var porcentaje: float = 0.0
+	if total_notas > 0:
+		porcentaje = float(aciertos) / total_notas * 100.0
+
+	var mensaje: String = ""
+	if porcentaje >= 90.0:
+		mensaje = "¡Excelente!"
+	elif porcentaje >= 50.0:
+		mensaje = "Bien"
+	else:
+		mensaje = "Seguí practicando"
+
+	# Cargar escena de resultado
+	var resultado_scene: PackedScene = preload("res://PROTOTIPO5/Resultado.tscn")
+	var resultado = resultado_scene.instantiate()
+	resultado.mensaje = mensaje
+
+	get_tree().root.add_child(resultado)
+	get_tree().current_scene.free()  # Liberamos la escena actual (main)
+"""
+
+func finalizar_juego() -> void:
+	var total_notas: int = secuencia_data.data.size()
+	var porcentaje: float = 0.0
+	if total_notas > 0:
+		porcentaje = float(aciertos) / total_notas * 100.0
+
+	if porcentaje >= 90.0:
+		Juego.resultado = "¡Excelente!"
+	elif porcentaje >= 50.0:
+		Juego.resultado = "Bien"
+	else:
+		Juego.resultado = "Seguí practicando"
+
+	# Cambiar a la escena de resultados
+	get_tree().change_scene_to_file("res://PROTOTIPO5/Resultado.tscn")
+
 
 func _on_volver_pressed() -> void:
 	get_tree().change_scene_to_file("res://menuInicio/inicio.tscn")

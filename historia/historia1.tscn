@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://bc8g66ea1gw5j"]
+
+[ext_resource type="Script" uid="uid://bhtsccaxbn74n" path="res://historia/historia_1.gd" id="1_d3mim"]
+[ext_resource type="Texture2D" uid="uid://rxa1wrwywns3" path="res://assets/Fondo/fondo mega generico.png" id="1_gh2c5"]
+[ext_resource type="Texture2D" uid="uid://c5kdasip4ttwx" path="res://assets/Personajes/Jefe - introductor.png" id="2_qw57c"]
+[ext_resource type="AudioStream" uid="uid://pwcfnipdemsr" path="res://assets/Canción principal.mp3" id="4_spcha"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d3mim")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1746.0
+offset_bottom = 1080.0
+texture = ExtResource("1_gh2c5")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1070.0
+offset_top = -6.0
+offset_right = 1817.0
+offset_bottom = 421.0
+texture = ExtResource("2_qw57c")
+expand_mode = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 85.0
+offset_right = 954.0
+offset_bottom = 969.0
+theme_override_font_sizes/normal_font_size = 55
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1216.0
+offset_top = 577.0
+offset_right = 1542.0
+offset_bottom = 661.0
+theme_override_font_sizes/font_size = 55
+text = "escuchar"
+
+[node name="audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_spcha")
+
+[node name="siguiente" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1239.0
+offset_top = 811.0
+offset_right = 1490.0
+offset_bottom = 895.0
+theme_override_font_sizes/font_size = 55
+text = "siguiente"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="siguiente" to="." method="_on_siguiente_pressed"]

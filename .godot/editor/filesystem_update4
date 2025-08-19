@@ -1,8 +1,9 @@
 res://default_bus_layout.tres
-res://PROTOTIPO5/Main.tscn
-res://PROTOTIPO5/main.gd
-res://PROTOTIPO5/Nota.tscn
-res://PROTOTIPO3/escenas/main.tscn
 res://menuInicio/inicio.tscn
+res://menuInicio/inicio.gd
+res://PROTOTIPO5/Nota.tscn
+res://PROTOTIPO5/Main.tscn
 res://PROTOTIPO6efectos/efecto.tscn
-res://PROTOTIPO5/secuencia.gd
+res://PROTOTIPO5/Resultado.tscn
+res://historia/historia1.tscn
+res://historia/historia2/historia2.tscn

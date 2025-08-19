@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgj27xowh0t61"]
+
+[ext_resource type="Texture2D" uid="uid://rxa1wrwywns3" path="res://assets/Fondo/fondo mega generico.png" id="1_bjaam"]
+[ext_resource type="Script" uid="uid://c3cmsosem663i" path="res://historia/historia2/historia_2.gd" id="1_jj2v5"]
+[ext_resource type="Texture2D" uid="uid://c2xse2r58evl6" path="res://assets/Personajes/Beto el Queleco 1.png" id="2_y03ww"]
+[ext_resource type="AudioStream" uid="uid://o7xiyndtsxo7" path="res://assets/metronomo60.mp3" id="4_e0w08"]
+
+[node name="Historia2" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_jj2v5")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1746.0
+offset_bottom = 1080.0
+texture = ExtResource("1_bjaam")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1217.0
+offset_top = -22.0
+offset_right = 1858.0
+offset_bottom = 614.0
+texture = ExtResource("2_y03ww")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 78.0
+offset_right = 1188.0
+offset_bottom = 1081.0
+theme_override_font_sizes/normal_font_size = 55
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_e0w08")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1323.0
+offset_top = 667.0
+offset_right = 1569.0
+offset_bottom = 751.0
+theme_override_font_sizes/font_size = 55
+text = "escuchar"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1315.0
+offset_top = 832.0
+offset_right = 1575.0
+offset_bottom = 916.0
+theme_override_font_sizes/font_size = 55
+text = "jugar"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

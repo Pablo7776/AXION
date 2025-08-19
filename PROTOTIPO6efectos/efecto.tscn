@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://d3phyav16xrbj"]
 
 [ext_resource type="Script" uid="uid://dr8ihiqhw7o5x" path="res://PROTOTIPO6efectos/efecto.gd" id="1_ch5bp"]
-[ext_resource type="AudioStream" uid="uid://o7xiyndtsxo7" path="res://assets/metronomo60.mp3" id="2_ch5bp"]
+[ext_resource type="AudioStream" uid="uid://pwcfnipdemsr" path="res://assets/Canción principal.mp3" id="2_ch5bp"]
 
 [sub_resource type="Gradient" id="Gradient_ch5bp"]
 interpolation_mode = 2

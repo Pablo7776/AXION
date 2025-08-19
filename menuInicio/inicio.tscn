@@ -31,16 +31,19 @@ offset_right = 1373.0
 offset_bottom = 798.0
 
 [node name="Button" type="Button" parent="VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 55
 text = "proto 1"
 
 [node name="Button2" type="Button" parent="VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 55
 text = "proto 2"
 
 [node name="Button3" type="Button" parent="VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 55
 text = "proto 3"
@@ -48,8 +51,12 @@ text = "proto 3"
 [node name="Button4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 55
-text = "proto 5
-"
+text = "jugar"
+
+[node name="Button5" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 55
+text = "modo historia"
 
 [node name="salir" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -60,4 +67,5 @@ text = "salir"
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button5" to="." method="_on_button_5_pressed"]
 [connection signal="pressed" from="VBoxContainer/salir" to="." method="_on_salir_pressed"]

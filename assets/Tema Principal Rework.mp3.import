@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dx5mwiaq3goyb"
+path="res://.godot/imported/Tema Principal Rework.mp3-8409c2d268141f7d0b8354b58e80cb76.mp3str"
+
+[deps]
+
+source_file="res://assets/Tema Principal Rework.mp3"
+dest_files=["res://.godot/imported/Tema Principal Rework.mp3-8409c2d268141f7d0b8354b58e80cb76.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

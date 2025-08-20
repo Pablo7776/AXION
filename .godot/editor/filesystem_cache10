@@ -1,11 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1755712684
+::res://::1755729883
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::5086961324228288978::1755652458::0::1::::<><><>0<>0<><>::
-export_presets.cfg::TextFile/TextFile::-1::1755655831::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile/TextFile::-1::1755714432::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::8337952126813218997::1723936402::1755652736::0::::<><><>0<>0<>59574140f21cb690793748c2c25f6b34<>::
-::res://assets/::1755664510
-425556__t_roy_920__rock-808-beat.mp3::AudioStreamMP3/AudioStreamMP3::3455101587255234271::1754602454::1754854217::1::::<><><>0<>0<>68ca28f13423bb7cb0c764f52cba8294<>res://.godot/imported/425556__t_roy_920__rock-808-beat.mp3-78b5ea38ab84000cc37558e0a9d114e0.mp3str::
-758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3::AudioStreamMP3/AudioStreamMP3::166779468353694158::1754965543::1754965632::1::::<><><>0<>0<>d01ed87a0304c6f9bc7eecff0a16b2a8<>res://.godot/imported/758234__looplicator__60-bpm-industrial-drum-loop-5792-wav.mp3-f1b862c0a82bb4bd5f32f3aff97e1281.mp3str::
+Tema Principal Rework.mp3::AudioStreamMP3::3495343436627369167::1755729882::1755729883::1::::<><><>0<>0<>f58a19d26812345e90547ef612b58a4a<>res://.godot/imported/Tema Principal Rework.mp3-ddad3757c536e339aefed99b409cc358.mp3str::
+::res://assets/::1755729935
 abajo.png::CompressedTexture2D/CompressedTexture2D::4424003867241280440::1755664491::1755664510::1::::<><><>0<>0<>76d779c90ae6f52fd08ecc04b0d11b6e<>res://.godot/imported/abajo.png-f82ff80ddaea1f26f3f1a7a3566dd1c2.ctex::
 arriba.png::CompressedTexture2D/CompressedTexture2D::915574424231868186::1755664425::1755664510::1::::<><><>0<>0<>f790087774e5890978b0025a51588056<>res://.godot/imported/arriba.png-8ba86f585e32d785b9c888b63ed9d2b1.ctex::
 Canción principal.mp3::AudioStreamMP3/AudioStreamMP3::1098380023962557525::1755307783::1755320373::1::::<><><>0<>0<>897afe1c51e31cbce6e254b6fc982a02<>res://.godot/imported/Canción principal.mp3-25dc7f40beceabbd2eaae70310857b33.mp3str::
@@ -14,6 +13,7 @@ iz.png::CompressedTexture2D/CompressedTexture2D::2739604935338244832::1755652664
 metronomo60.mp3::AudioStreamMP3/AudioStreamMP3::1050115957052526136::1755315600::1755316840::1::::<><><>0<>0<>75ff316bf3ff1dd68c182ce99ef57514<>res://.godot/imported/metronomo60.mp3-9a2cc50dbe397e2034665e7383cce4d0.mp3str::
 png boceto basico del mimido.png::CompressedTexture2D/CompressedTexture2D::7372479703288276410::1754723623::1754851979::1::::<><><>0<>0<>5f09db7d041c910945a5837cd31cd110<>res://.godot/imported/png boceto basico del mimido.png-906710829b1d2c038106dbc8e2f22947.ctex::
 tambor.mp3::AudioStreamMP3/AudioStreamMP3::7388834800387005903::1755188403::1755188407::1::::<><><>0<>0<>8aed57ad82e38c4f9efd7ed4d5a3c912<>res://.godot/imported/tambor.mp3-53913095c8c6181e4002b1e65574419d.mp3str::
+Tema Principal Rework.mp3::AudioStreamMP3::8836305099706384729::1755718291::1755729940::1::::<><><>0<>0<>91f58eb44e0cc9cc0c572acfae664749<>res://.godot/imported/Tema Principal Rework.mp3-8409c2d268141f7d0b8354b58e80cb76.mp3str::
 ::res://assets/Fondo/::1755569142
 fondo mega generico.png::CompressedTexture2D/CompressedTexture2D::1240738643639362660::1755265847::1755569142::1::::<><><>0<>0<>8ecd9b9318488f3154ad736ce4ebd27f<>res://.godot/imported/fondo mega generico.png-16b42a40561a6fe8db936948520d5009.ctex::
 ::res://assets/Personajes/::1755569326
@@ -57,16 +57,18 @@ cuadradoMagicoInverso.tscn::PackedScene/PackedScene::7451540083049825242::175513
 cuadrado_magico.gd::GDScript/GDScript::3974879604681179108::1755012446::0::1::::<>Node2D<><>0<>0<><>::
 RotacionCuadrado.tscn::PackedScene/PackedScene::380337655238309493::1755139691::0::1::::<><><>0<>0<><>::uid://gpj24173ew4f::::res://PROTOTIPO4/rotacion_cuadrado.gd
 rotacion_cuadrado.gd::GDScript/GDScript::452694962343024919::1755011803::0::1::::<>Node2D<><>0<>0<><>::
-::res://PROTOTIPO5/::1755712784
-main.gd::GDScript::4162148927319557935::1755712782::0::1::::<>Node2D<><>0<>0<><>::
-Main.tscn::PackedScene::8345857032336542688::1755712784::0::1::::<><><>0<>0<><>::uid://b0kf8qmblys7x::::res://PROTOTIPO5/main.gd<>uid://d3phyav16xrbj::::res://PROTOTIPO6efectos/efecto.tscn<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png<>uid://ddjhbai8eqqmx::::res://assets/tambor.mp3<>uid://pwcfnipdemsr::::res://assets/Canción principal.mp3
-NotaArriba.tscn::PackedScene::927037152444316464::1755712784::0::1::::<><><>0<>0<><>::uid://nbrm22uw58pi::::res://assets/arriba.png
-NotaDerecha.tscn::PackedScene::4755384886596587452::1755712784::0::1::::<><><>0<>0<><>::uid://8vuxl3v2tx6b::::res://assets/der.png
-NotaIzquierda.tscn::PackedScene::1253862545392176260::1755712784::0::1::::<><><>0<>0<><>::uid://bfbc5mln03trc::::res://assets/iz.png
+::res://PROTOTIPO5/::1755729852
+main.gd::GDScript::4162148927319557935::1755714116::0::1::::<>Node2D<><>0<>0<><>::
+Main.tscn::PackedScene::8345857032336542688::1755729852::0::1::::<><><>0<>0<><>::uid://b0kf8qmblys7x::::res://PROTOTIPO5/main.gd<>uid://d3phyav16xrbj::::res://PROTOTIPO6efectos/efecto.tscn<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png<>uid://ddjhbai8eqqmx::::res://assets/tambor.mp3<>uid://pwcfnipdemsr::::res://assets/Canción principal.mp3
+NotaArriba.tscn::PackedScene::927037152444316464::1755729087::0::1::::<><><>0<>0<><>::uid://nbrm22uw58pi::::res://assets/arriba.png
+NotaDerecha.tscn::PackedScene::4755384886596587452::1755729087::0::1::::<><><>0<>0<><>::uid://8vuxl3v2tx6b::::res://assets/der.png
+NotaIzquierda.tscn::PackedScene::1253862545392176260::1755729087::0::1::::<><><>0<>0<><>::uid://bfbc5mln03trc::::res://assets/iz.png
+NotaAbajo.tscn::PackedScene::5055445089176609714::1755729087::0::1::::<><><>0<>0<><>::uid://b4baxyegok3cu::::res://assets/abajo.png
+secuenciaAbajo.gd::GDScript::5875160692448235210::1755729729::0::1::::SecuenciaAbajo<>Resource<><>0<>0<><>::
 resultado.gd::GDScript/GDScript::2648135288448601751::1755363623::0::1::::<>Control<><>0<>0<><>::
 Resultado.tscn::PackedScene/PackedScene::5505939149311093732::1755613610::0::1::::<><><>0<>0<><>::uid://bdy1nv53dpbdf::::res://PROTOTIPO5/resultado.gd<>uid://rxa1wrwywns3::::res://assets/Fondo/fondo mega generico.png
-secuencia.gd::GDScript/GDScript::4583005793475176716::1755653659::0::1::::Secuencia<>Resource<><>0<>0<><>::
 secuenciaArriba.gd::GDScript/GDScript::2912338759209174538::1755664996::0::1::::SecuenciaArriba<>Resource<><>0<>0<><>::
+secuenciaDerecha.gd::GDScript::4583005793475176716::1755712964::0::1::::SecuenciaDerecha<>Resource<><>0<>0<><>::
 secuenciaIzquierda.gd::GDScript/GDScript::9172270370485895007::1755653659::0::1::::SecuenciaIzquierda<>Resource<><>0<>0<><>::
 ::res://PROTOTIPO6efectos/::1755613610
 efecto.gd::GDScript/GDScript::8421095540561686411::1755271121::0::1::::<>Node2D<><>0<>0<><>::

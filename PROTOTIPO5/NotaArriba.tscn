@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://nhcfworcjwro"]
+
+[ext_resource type="Texture2D" uid="uid://nbrm22uw58pi" path="res://assets/arriba.png" id="1_833wm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f31ad"]
+
+[node name="NotaArriba" type="Node2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_f31ad")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_833wm")

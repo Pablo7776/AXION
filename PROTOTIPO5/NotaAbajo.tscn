@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cea5pa7yq37j7"]
+
+[ext_resource type="Texture2D" uid="uid://b4baxyegok3cu" path="res://assets/abajo.png" id="1_bpr0q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jxqdx"]
+size = Vector2(120, 124)
+
+[node name="NotaAbajo" type="Node2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_jxqdx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_bpr0q")

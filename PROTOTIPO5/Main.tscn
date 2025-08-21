@@ -63,11 +63,29 @@ texture = ExtResource("2_sniqo")
 [node name="Musica" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_pbtkh")
 
-[node name="Tambor" type="AudioStreamPlayer2D" parent="."]
+[node name="sonidoDerecha" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_fxfcp")
 volume_db = 24.0
 attenuation = 0.143588
-bus = &"TAMBOR"
+bus = &"sonidoDerecha"
+
+[node name="sonidoIzquierda" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_fxfcp")
+volume_db = 24.0
+pitch_scale = 2.0
+bus = &"sonidoIzquierda"
+
+[node name="sonidoArriba" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_fxfcp")
+volume_db = 24.0
+pitch_scale = 3.04
+bus = &"sonidoArriba"
+
+[node name="sonidoAbajo" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_fxfcp")
+volume_db = 24.0
+pitch_scale = 3.99
+bus = &"sonidoAbajo"
 
 [node name="volver" type="Button" parent="."]
 offset_left = 1564.0

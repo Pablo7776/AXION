@@ -10,7 +10,10 @@ extends Node2D
 @onready var notas_contenedor4: Node = $Notas4
 @onready var linea: Node2D = $Linea
 @onready var musica: AudioStreamPlayer2D = $Musica
-@onready var tambor: AudioStreamPlayer2D = $Tambor
+@onready var sonidoDerecha: AudioStreamPlayer2D = $sonidoDerecha
+@onready var sonidoIzquierda: AudioStreamPlayer2D = $sonidoIzquierda
+@onready var sonidoArriba: AudioStreamPlayer2D = $sonidoArriba
+@onready var sonidoAbajo: AudioStreamPlayer2D = $sonidoAbajo
 
 @onready var label_aciertos: Label = $LabelAciertos
 @onready var label_pifies: Label = $LabelPifies
@@ -77,16 +80,16 @@ func _process(delta: float) -> void:
 
 	# Inputs
 	if Input.is_action_just_pressed("hitDerecha"):
-		_revisar_acierto(notas_contenedor, "ACIERTO 1", "FALLO 1")
+		_revisar_acierto(notas_contenedor, "ACIERTO 1", "FALLO 1", sonidoDerecha)
 
 	if Input.is_action_just_pressed("hitIzquierda"):
-		_revisar_acierto(notas_contenedor2, "ACIERTO 2", "FALLO 2")
+		_revisar_acierto(notas_contenedor2, "ACIERTO 2", "FALLO 2", sonidoIzquierda)
 
 	if Input.is_action_just_pressed("hitArriba"):
-		_revisar_acierto(notas_contenedor3, "ACIERTO 3", "FALLO 3")
+		_revisar_acierto(notas_contenedor3, "ACIERTO 3", "FALLO 3", sonidoArriba)
 
 	if Input.is_action_just_pressed("hitAbajo"):
-		_revisar_acierto(notas_contenedor4, "ACIERTO 4", "FALLO 4")
+		_revisar_acierto(notas_contenedor4, "ACIERTO 4", "FALLO 4", sonidoAbajo)
 
 	# Fin del juego
 	if not musica.playing \
@@ -106,7 +109,7 @@ func _mover_notas(contenedor: Node, delta: float) -> void:
 		if (nota as Node2D).position.y > 1200.0:
 			nota.queue_free()
 
-func _revisar_acierto(contenedor: Node, msg_ok: String, msg_fail: String) -> void:
+func _revisar_acierto(contenedor: Node, msg_ok: String, msg_fail: String, sonido: AudioStreamPlayer2D) -> void:
 	var acierto: bool = false
 	for nota in contenedor.get_children():
 		var dy: float = abs((nota as Node2D).global_position.y - linea.global_position.y)
@@ -114,7 +117,7 @@ func _revisar_acierto(contenedor: Node, msg_ok: String, msg_fail: String) -> voi
 			aciertos += 1
 			print(msg_ok, "dy=", dy)
 			nota.queue_free()
-			tambor.play()
+			sonido.play()
 			acierto = true
 			break
 	if not acierto:

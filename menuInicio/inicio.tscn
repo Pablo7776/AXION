@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://gfv4q47umgx0"]
+[gd_scene load_steps=5 format=3 uid="uid://gfv4q47umgx0"]
 
 [ext_resource type="Script" uid="uid://bn3gnqlvi02lg" path="res://menuInicio/inicio.gd" id="1_ocxu5"]
 [ext_resource type="Texture2D" uid="uid://ddbjwtdmmrndy" path="res://assets/png boceto basico del mimido.png" id="2_qrfih"]
+[ext_resource type="FontFile" uid="uid://d3s04rsewu716" path="res://assets/fonts/jmh_cthulhumbus/JMH_Cthulhumbus.otf" id="3_oc8wf"]
+[ext_resource type="FontFile" uid="uid://bmcrkmt7yev73" path="res://assets/fonts/lovecraft/lovecraft.otf" id="4_e5w6v"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -23,12 +25,48 @@ position = Vector2(920, 538)
 scale = Vector2(0.490995, 0.592147)
 texture = ExtResource("2_qrfih")
 
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 111.0
+offset_bottom = 356.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 19
+theme_override_constants/shadow_offset_x = 15
+theme_override_fonts/normal_font = ExtResource("3_oc8wf")
+theme_override_font_sizes/bold_italics_font_size = 55
+theme_override_font_sizes/normal_font_size = 150
+bbcode_enabled = true
+text = "[center][color=#BF0000][wave amp=200 freq=0.04]Kaotic Cosmic[/wave][/color][/center]
+"
+horizontal_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 321.0
+offset_bottom = 564.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 19
+theme_override_constants/shadow_offset_x = 15
+theme_override_fonts/normal_font = ExtResource("3_oc8wf")
+theme_override_font_sizes/bold_italics_font_size = 55
+theme_override_font_sizes/normal_font_size = 135
+bbcode_enabled = true
+text = "[center][color=#BF0000][wave amp=200 freq=0.1]Studio[/wave][/color][/center]
+"
+horizontal_alignment = 1
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 493.0
-offset_top = 392.0
-offset_right = 1373.0
-offset_bottom = 798.0
+offset_left = 553.0
+offset_top = 545.0
+offset_right = 1264.0
+offset_bottom = 1106.0
 
 [node name="Button" type="Button" parent="VBoxContainer"]
 visible = false
@@ -50,17 +88,26 @@ text = "proto 3"
 
 [node name="Button4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 55
+theme_override_fonts/font = ExtResource("4_e5w6v")
+theme_override_font_sizes/font_size = 83
 text = "jugar"
 
 [node name="Button5" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 55
-text = "modo historia"
+theme_override_fonts/font = ExtResource("4_e5w6v")
+theme_override_font_sizes/font_size = 83
+text = "historia"
+
+[node name="Button6" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_e5w6v")
+theme_override_font_sizes/font_size = 83
+text = "créditos"
 
 [node name="salir" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 55
+theme_override_fonts/font = ExtResource("4_e5w6v")
+theme_override_font_sizes/font_size = 83
 text = "salir"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

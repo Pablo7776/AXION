@@ -1,44 +1,27 @@
-[gd_resource type="AudioBusLayout" load_steps=7 format=3 uid="uid://ceqfrllalj2qo"]
-
-[sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_j3pel"]
-resource_name = "Amplify"
-volume_db = 24.0
-
-[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_j3pel"]
-resource_name = "PitchShift"
-pitch_scale = 2.92
-
-[sub_resource type="AudioEffectNotchFilter" id="AudioEffectNotchFilter_j3pel"]
-resource_name = "NotchFilter"
-
-[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_g28q7"]
-resource_name = "PitchShift"
-pitch_scale = 0.01
-
-[sub_resource type="AudioEffectDistortion" id="AudioEffectDistortion_j3pel"]
-resource_name = "Distortion"
-drive = 1.0
-post_gain = 14.15
-
-[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_j3pel"]
-resource_name = "Reverb"
+[gd_resource type="AudioBusLayout" format=3 uid="uid://ceqfrllalj2qo"]
 
 [resource]
-bus/0/effect/0/effect = SubResource("AudioEffectAmplify_j3pel")
-bus/0/effect/0/enabled = false
-bus/0/effect/1/effect = SubResource("AudioEffectPitchShift_j3pel")
-bus/0/effect/1/enabled = false
-bus/1/name = &"TAMBOR"
+bus/1/name = &"sonidoDerecha"
 bus/1/solo = false
 bus/1/mute = false
 bus/1/bypass_fx = false
 bus/1/volume_db = 0.0
 bus/1/send = &"Master"
-bus/1/effect/0/effect = SubResource("AudioEffectNotchFilter_j3pel")
-bus/1/effect/0/enabled = false
-bus/1/effect/1/effect = SubResource("AudioEffectPitchShift_g28q7")
-bus/1/effect/1/enabled = false
-bus/1/effect/2/effect = SubResource("AudioEffectDistortion_j3pel")
-bus/1/effect/2/enabled = false
-bus/1/effect/3/effect = SubResource("AudioEffectReverb_j3pel")
-bus/1/effect/3/enabled = false
+bus/2/name = &"sonidoIzquierda"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 0.0
+bus/2/send = &"Master"
+bus/3/name = &"sonidoArriba"
+bus/3/solo = false
+bus/3/mute = false
+bus/3/bypass_fx = false
+bus/3/volume_db = 0.0
+bus/3/send = &"Master"
+bus/4/name = &"sonidoAbajo"
+bus/4/solo = false
+bus/4/mute = false
+bus/4/bypass_fx = false
+bus/4/volume_db = 0.0
+bus/4/send = &"Master"

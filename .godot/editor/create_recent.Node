@@ -1,13 +1,13 @@
+RichTextLabel
+Button
+AudioStreamPlayer2D
+AudioStreamPlayer
 Sprite2D
 CollisionShape2D
 Node2D
 TextureRect
-Button
-AudioStreamPlayer
-RichTextLabel
 Control
 Label
-AudioStreamPlayer2D
 ColorRect
 TextEdit
 VBoxContainer

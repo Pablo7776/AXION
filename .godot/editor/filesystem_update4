@@ -1,14 +1,4 @@
 res://default_bus_layout.tres
 res://PROTOTIPO5/Main.tscn
-res://PROTOTIPO5/Nota.tscn
-res://PROTOTIPO5/NotaIzquierda.tscn
-res://PROTOTIPO5/main.gd
-res://PROTOTIPO5/secuencia.gd
-res://PROTOTIPO5/secuenciaIzquierda.gd
-res://PROTOTIPO5/NotaArriba.tscn
-res://PROTOTIPO5/secuenciaArriba.gd
-res://PROTOTIPO5/NotaDerecha.tscn
-res://PROTOTIPO5/secuenciaDerecha.gd
-res://PROTOTIPO5/NotaAbajo.tscn
-res://PROTOTIPO5/secuenciaAbajo.gd
 res://PROTOTIPO6efectos/efecto.tscn
+res://menuInicio/inicio.tscn

@@ -96,7 +96,7 @@ func _process(delta: float) -> void:
 	and index_nota >= secuencia_data.data.size() \
 	and index_nota2 >= secuencia_data2.data.size() \
 	and index_nota3 >= secuencia_data3.data.size() \
-	and index_nota3 >= secuencia_data4.data.size() \
+	and index_nota4 >= secuencia_data4.data.size() \
 	and notas_contenedor.get_child_count() == 0 \
 	and notas_contenedor2.get_child_count() == 0 \
 	and notas_contenedor3.get_child_count() == 0 \

@@ -1,13 +1,13 @@
-res://default_bus_layout.tres
 res://PROTOTIPO5/Main.tscn
 res://PROTOTIPO6efectos/efecto.tscn
 res://menuInicio/inicio.tscn
 res://creditos/creditos.tscn
-res://creditos/creditos.gd
-res://menuInicio/inicio.gd
 res://historia/historia1.tscn
-res://PROTOTIPO5/NotaAbajo.tscn
 res://historia/historia2/historia2.tscn
+res://PROTOTIPO5/NotaAbajo.tscn
 res://PROTOTIPO5/NotaArriba.tscn
 res://PROTOTIPO5/NotaDerecha.tscn
 res://PROTOTIPO5/NotaIzquierda.tscn
+res://PROTOTIPO5/secuenciaDerecha.gd
+res://PROTOTIPO5/secuenciaArriba.gd
+res://PROTOTIPO5/main.gd

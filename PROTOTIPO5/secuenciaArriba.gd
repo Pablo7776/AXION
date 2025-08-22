@@ -3,38 +3,72 @@ class_name SecuenciaArriba
 
 var data = [
 
-
-
-	{"tiempo": 4.0, "tecla": "space"},
-
 	{"tiempo": 6.0, "tecla": "space"},
 
-	{"tiempo": 8.0, "tecla": "space"},
-	{"tiempo": 9.0, "tecla": "space"},
+	{"tiempo": 7.250, "tecla": "space"},
 
-	{"tiempo": 11.0, "tecla": "space"},
-	{"tiempo": 12.0, "tecla": "space"},
-	{"tiempo": 13.0, "tecla": "space"},
+	{"tiempo": 12.750, "tecla": "space"},
+
 	{"tiempo": 14.0, "tecla": "space"},
-	{"tiempo": 16.114, "tecla": "space"},
-	{"tiempo": 16.314, "tecla": "space"},
-	{"tiempo": 16.514, "tecla": "space"},
-	{"tiempo": 16.722, "tecla": "space"},
-	{"tiempo": 16.962, "tecla": "space"},
-	{"tiempo": 20.114, "tecla": "space"},
-	{"tiempo": 20.33, "tecla": "space"},
-	{"tiempo": 20.546, "tecla": "space"},
-	{"tiempo": 20.754, "tecla": "space"},
-	{"tiempo": 20.986, "tecla": "space"},
-	{"tiempo": 22.026, "tecla": "space"},
-	{"tiempo": 24.211, "tecla": "space"},
-	{"tiempo": 26.139, "tecla": "space"},
-	{"tiempo": 28.139, "tecla": "space"},
-	{"tiempo": 28.355, "tecla": "space"},
-	{"tiempo": 28.571, "tecla": "space"},
-	{"tiempo": 28.795, "tecla": "space"},
-	{"tiempo": 29.011, "tecla": "space"},
-	{"tiempo": 30.083, "tecla": "space"},
+
+	{"tiempo": 15.250, "tecla": "space"},
+
+	{"tiempo": 16.750, "tecla": "space"},
+
+	{"tiempo": 22.500, "tecla": "space"},
+
+	{"tiempo": 23.500, "tecla": "space"},
+
+	{"tiempo": 24.500, "tecla": "space"},
+
+	{"tiempo": 25.500, "tecla": "space"},
+
+	{"tiempo": 26.500, "tecla": "space"},
+
+	{"tiempo": 27.500, "tecla": "space"},
+
+	{"tiempo": 30.50, "tecla": "space"},
+
+	{"tiempo": 32.0, "tecla": "space"},
+
+	{"tiempo": 47.50, "tecla": "space"},
+
+	{"tiempo": 48.0, "tecla": "space"},
+
+	{"tiempo": 56.0, "tecla": "space"},
+
+	{"tiempo": 58.250, "tecla": "space"},
+
+	{"tiempo": 58.750, "tecla": "space"},
+
+	{"tiempo": 60.750, "tecla": "space"},
+
+	{"tiempo": 61.250, "tecla": "space"},
+
+	{"tiempo": 61.750, "tecla": "space"},
+
+	{"tiempo": 66.250, "tecla": "space"},
+
+	{"tiempo": 66.750, "tecla": "space"},
+
+	{"tiempo": 67.250, "tecla": "space"},
+
+	{"tiempo": 67.750, "tecla": "space"},
+
+	{"tiempo": 73.0, "tecla": "space"},
+
+	{"tiempo": 73.50, "tecla": "space"},
+
+	{"tiempo": 75.0, "tecla": "space"},
+
+	{"tiempo": 75.750, "tecla": "space"},
+
+	{"tiempo": 81.0, "tecla": "space"},
+
+	{"tiempo": 81.50, "tecla": "space"},
+
+
+
 
 
 ]

@@ -1,17 +1,40 @@
-[gd_scene load_steps=6 format=3 uid="uid://dq52btfdshp6o"]
+[gd_scene load_steps=12 format=3 uid="uid://dq52btfdshp6o"]
 
 [ext_resource type="Script" uid="uid://b0kf8qmblys7x" path="res://PROTOTIPO5/main.gd" id="1_on1ap"]
 [ext_resource type="PackedScene" uid="uid://d3phyav16xrbj" path="res://PROTOTIPO6efectos/efecto.tscn" id="2_pbtkh"]
-[ext_resource type="Texture2D" uid="uid://ddbjwtdmmrndy" path="res://assets/png boceto basico del mimido.png" id="2_sniqo"]
+[ext_resource type="Texture2D" uid="uid://b5cw2gwf6m8rk" path="res://assets/fondo2/Fondo/Pilar 2 - altar del jugador.png" id="3_dlc41"]
+[ext_resource type="Texture2D" uid="uid://doee7c0uf0ieg" path="res://assets/fondo2/Fondo/Pilar 1 - izquierda manotas.png" id="4_04rhn"]
 [ext_resource type="AudioStream" uid="uid://ddjhbai8eqqmx" path="res://assets/tambor.mp3" id="4_fxfcp"]
 [ext_resource type="AudioStream" uid="uid://dx5mwiaq3goyb" path="res://assets/Tema Principal Rework.mp3" id="4_pbtkh"]
+[ext_resource type="Texture2D" uid="uid://bx1pgkqlqc27l" path="res://assets/fondo2/Fondo/Pilar 3 - derecho baboso.png" id="5_5ulnx"]
+[ext_resource type="Texture2D" uid="uid://ynyukf4k7wq1" path="res://assets/Personajes/Gordo turbina formido.png" id="6_5ulnx"]
+[ext_resource type="FontFile" uid="uid://bmcrkmt7yev73" path="res://assets/fonts/lovecraft/lovecraft.otf" id="9_0un60"]
+[ext_resource type="AudioStream" uid="uid://dqhmcdvvhius8" path="res://assets/Sonidos/Slime FX.wav" id="9_g1316"]
+[ext_resource type="AudioStream" uid="uid://bhjn1vnk5ba6" path="res://assets/Sonidos/Bone FX.wav" id="9_ivv0y"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_on1ap")
 metadata/_edit_horizontal_guides_ = [88.0]
 
 [node name="Efecto" parent="." instance=ExtResource("2_pbtkh")]
-position = Vector2(-8, -56)
+position = Vector2(-8, -24)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(848, 952)
+scale = Vector2(0.13326, 0.1)
+texture = ExtResource("3_dlc41")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(256, 456)
+scale = Vector2(0.143467, 0.167267)
+skew = 0.277507
+texture = ExtResource("4_04rhn")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(1448, 440)
+scale = Vector2(0.143467, 0.167267)
+skew = -0.277507
+texture = ExtResource("5_5ulnx")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 visible = false
@@ -56,9 +79,9 @@ position = Vector2(384, 88)
 position = Vector2(448, 88)
 
 [node name="PngBocetoBasicoDelMimido" type="Sprite2D" parent="."]
-position = Vector2(905, 324)
-scale = Vector2(0.129717, 0.123822)
-texture = ExtResource("2_sniqo")
+position = Vector2(864, 272)
+scale = Vector2(0.0964756, 0.0962012)
+texture = ExtResource("6_5ulnx")
 
 [node name="Musica" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_pbtkh")
@@ -76,15 +99,13 @@ pitch_scale = 2.0
 bus = &"sonidoIzquierda"
 
 [node name="sonidoArriba" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("4_fxfcp")
+stream = ExtResource("9_g1316")
 volume_db = 24.0
-pitch_scale = 3.04
 bus = &"sonidoArriba"
 
 [node name="sonidoAbajo" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("4_fxfcp")
+stream = ExtResource("9_ivv0y")
 volume_db = 24.0
-pitch_scale = 3.99
 bus = &"sonidoAbajo"
 
 [node name="volver" type="Button" parent="."]
@@ -96,19 +117,29 @@ theme_override_font_sizes/font_size = 40
 text = "x"
 
 [node name="LabelAciertos" type="Label" parent="."]
-offset_left = 1396.0
-offset_top = 221.0
-offset_right = 1673.0
-offset_bottom = 297.0
-theme_override_font_sizes/font_size = 55
+offset_left = 1424.0
+offset_top = 848.0
+offset_right = 1701.0
+offset_bottom = 924.0
+theme_override_colors/font_color = Color(0.711886, 0.664318, 0.144587, 1)
+theme_override_colors/font_shadow_color = Color(0.172549, 0.223529, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 5
+theme_override_fonts/font = ExtResource("9_0un60")
+theme_override_font_sizes/font_size = 60
 text = "Aciertos: 0"
 
 [node name="LabelPifies" type="Label" parent="."]
-offset_left = 1397.0
-offset_top = 310.0
-offset_right = 1601.0
-offset_bottom = 386.0
-theme_override_font_sizes/font_size = 55
+offset_left = 1432.0
+offset_top = 936.0
+offset_right = 1636.0
+offset_bottom = 1012.0
+theme_override_colors/font_color = Color(0.713726, 0.662745, 0.145098, 1)
+theme_override_colors/font_shadow_color = Color(0.172244, 0.223239, 1.20327e-07, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 5
+theme_override_fonts/font = ExtResource("9_0un60")
+theme_override_font_sizes/font_size = 60
 text = "Pifies: 0"
 
 [connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]

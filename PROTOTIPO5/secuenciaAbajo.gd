@@ -3,59 +3,70 @@ class_name SecuenciaAbajo
 
 var data = [
 
+	{"tiempo": 2.0, "tecla": "space"},
 
+	{"tiempo": 3.25, "tecla": "space"},
 
-	{"tiempo": 3.969, "tecla": "space"},
+	{"tiempo": 10.0, "tecla": "space"},
 
-	{"tiempo": 6.073, "tecla": "space"},
+	{"tiempo": 11.250, "tecla": "space"},
 
-	{"tiempo": 7.945, "tecla": "space"},
+	{"tiempo": 16.0, "tecla": "space"},
 
-	{"tiempo": 9.921, "tecla": "space"},
+	{"tiempo": 16.50, "tecla": "space"},
 
-	{"tiempo": 11.929, "tecla": "space"},
+	{"tiempo": 17.250, "tecla": "space"},
 
-	{"tiempo": 13.898, "tecla": "space"},
+	{"tiempo": 18.250, "tecla": "space"},
 
-	{"tiempo": 15.914, "tecla": "space"},
+	{"tiempo": 18.750, "tecla": "space"},
 
-	{"tiempo": 16.138, "tecla": "space"},
+	{"tiempo": 19.250, "tecla": "space"},
 
-	{"tiempo": 16.402, "tecla": "space"},
+	{"tiempo": 19.750, "tecla": "space"},
 
-	{"tiempo": 17.506, "tecla": "space"},
+	{"tiempo": 20.250, "tecla": "space"},
 
-	{"tiempo": 18.562, "tecla": "space"},
+	{"tiempo": 20.750, "tecla": "space"},
 
-	{"tiempo": 20.01, "tecla": "space"},
+	{"tiempo": 34.0, "tecla": "space"},
 
-	{"tiempo": 21.05, "tecla": "space"},
+	{"tiempo": 34.50, "tecla": "space"},
 
-	{"tiempo": 22.043, "tecla": "space"},
+	{"tiempo": 34.750, "tecla": "space"},
 
-	{"tiempo": 23.579, "tecla": "space"},
+	{"tiempo": 36.500, "tecla": "space"},
 
-	{"tiempo": 23.843, "tecla": "space"},
+	{"tiempo": 37.50, "tecla": "space"},
 
-	{"tiempo": 24.043, "tecla": "space"},
+	{"tiempo": 40.0, "tecla": "space"},
 
-	{"tiempo": 24.235, "tecla": "space"},
+	{"tiempo": 40.500, "tecla": "space"},
 
-	{"tiempo": 24.459, "tecla": "space"},
+	{"tiempo": 41.0, "tecla": "space"},
 
-	{"tiempo": 24.675, "tecla": "space"},
-
-	{"tiempo": 24.867, "tecla": "space"},
-
-	{"tiempo": 25.091, "tecla": "space"},
-
-	{"tiempo": 25.363, "tecla": "space"},
-
-	{"tiempo": 25.619, "tecla": "space"},
-
-	{"tiempo": 27.091, "tecla": "space"},
-
-	{"tiempo": 27.275, "tecla": "space"},
-
-
+	{"tiempo": 41.500, "tecla": "space"},
+	{"tiempo": 41.750, "tecla": "space"},
+	{"tiempo": 42.0, "tecla": "space"},
+	{"tiempo": 43.750, "tecla": "space"},
+	{"tiempo": 55.0, "tecla": "space"},
+	{"tiempo": 60.50, "tecla": "space"},
+	{"tiempo": 61.0, "tecla": "space"},
+	{"tiempo": 61.50, "tecla": "space"},
+	{"tiempo": 62.250, "tecla": "space"},
+	{"tiempo": 62.750, "tecla": "space"},
+	{"tiempo": 64.0, "tecla": "space"},
+	{"tiempo": 68.0, "tecla": "space"},
+	{"tiempo": 68.50, "tecla": "space"},
+	{"tiempo": 69.0, "tecla": "space"},
+	{"tiempo": 69.50, "tecla": "space"},
+	{"tiempo": 70.0, "tecla": "space"},
+	{"tiempo": 71.0, "tecla": "space"},
+	{"tiempo": 74.0, "tecla": "space"},
+	{"tiempo": 74.750, "tecla": "space"},
+	{"tiempo": 79.0, "tecla": "space"},
+	{"tiempo": 80.0, "tecla": "space"},
+	{"tiempo": 80.250, "tecla": "space"},
+	{"tiempo": 81.250, "tecla": "space"},
+	{"tiempo": 81.750, "tecla": "space"},
 ]

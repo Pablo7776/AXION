@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dqhmcdvvhius8"
+path="res://.godot/imported/Slime FX.wav-9e4ec58fe62cc6abfdb7f986326eb522.sample"
+
+[deps]
+
+source_file="res://assets/Sonidos/Slime FX.wav"
+dest_files=["res://.godot/imported/Slime FX.wav-9e4ec58fe62cc6abfdb7f986326eb522.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

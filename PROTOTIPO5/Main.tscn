@@ -11,7 +11,7 @@ script = ExtResource("1_on1ap")
 metadata/_edit_horizontal_guides_ = [88.0]
 
 [node name="Efecto" parent="." instance=ExtResource("2_pbtkh")]
-position = Vector2(128, -56)
+position = Vector2(-8, -56)
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 visible = false
@@ -22,38 +22,38 @@ offset_bottom = 277.0
 color = Color(0.196143, 0.196143, 0.196143, 1)
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_left = 336.0
-offset_top = 883.0
-offset_right = 1091.0
-offset_bottom = 892.0
+offset_left = 448.0
+offset_top = 888.0
+offset_right = 1203.0
+offset_bottom = 897.0
 color = Color(0.196143, 0.196143, 0.196143, 1)
 
 [node name="Linea" type="Node2D" parent="."]
 position = Vector2(718, 848)
 
 [node name="Spawner" type="Node2D" parent="."]
-position = Vector2(448, 256)
+position = Vector2(512, 256)
 
 [node name="Spawner2" type="Node2D" parent="."]
-position = Vector2(256, 256)
-
-[node name="Spawner3" type="Node2D" parent="."]
 position = Vector2(320, 256)
 
-[node name="Spawner4" type="Node2D" parent="."]
+[node name="Spawner3" type="Node2D" parent="."]
 position = Vector2(384, 256)
 
+[node name="Spawner4" type="Node2D" parent="."]
+position = Vector2(448, 256)
+
 [node name="Notas" type="Node2D" parent="."]
-position = Vector2(448, 88)
+position = Vector2(512, 88)
 
 [node name="Notas2" type="Node2D" parent="."]
-position = Vector2(256, 88)
-
-[node name="Notas3" type="Node2D" parent="."]
 position = Vector2(320, 88)
 
-[node name="Notas4" type="Node2D" parent="."]
+[node name="Notas3" type="Node2D" parent="."]
 position = Vector2(384, 88)
+
+[node name="Notas4" type="Node2D" parent="."]
+position = Vector2(448, 88)
 
 [node name="PngBocetoBasicoDelMimido" type="Sprite2D" parent="."]
 position = Vector2(905, 324)

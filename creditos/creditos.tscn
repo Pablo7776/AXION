@@ -1,0 +1,82 @@
+[gd_scene load_steps=3 format=3 uid="uid://bau8puxuy4hrx"]
+
+[ext_resource type="Script" uid="uid://bei47jofcujsm" path="res://creditos/creditos.gd" id="1_axor1"]
+[ext_resource type="FontFile" uid="uid://d3s04rsewu716" path="res://assets/fonts/jmh_cthulhumbus/JMH_Cthulhumbus.otf" id="2_gpfny"]
+
+[node name="Creditos" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_axor1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.133333, 0.0627451, 0.141176, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -386.0
+offset_top = 286.0
+offset_right = 386.0
+offset_bottom = -191.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gpfny")
+theme_override_font_sizes/font_size = 40
+text = "Mateo Van Der Walt: Audio "
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gpfny")
+theme_override_font_sizes/font_size = 40
+text = "Saúl Alberto Arcucci: Arte 2D "
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gpfny")
+theme_override_font_sizes/font_size = 40
+text = "Juan Bucci: Narrativa"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gpfny")
+theme_override_font_sizes/font_size = 40
+text = "Pablo Duran: Programación"
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gpfny")
+theme_override_font_sizes/font_size = 40
+text = "Luciano Rodríguez :  Audio"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1582.0
+offset_top = 65.0
+offset_right = 1678.0
+offset_bottom = 149.0
+theme_override_font_sizes/font_size = 55
+text = "x"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

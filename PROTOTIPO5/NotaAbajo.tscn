@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cea5pa7yq37j7"]
 
-[ext_resource type="Texture2D" uid="uid://b4baxyegok3cu" path="res://assets/abajo.png" id="1_bpr0q"]
+[ext_resource type="Texture2D" uid="uid://1j7totatuijs" path="res://assets/Interfaz - mecánica /flechaAbajo.png" id="1_bpr0q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jxqdx"]
 size = Vector2(120, 124)
@@ -12,4 +12,6 @@ position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_jxqdx")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.00001, -2.00002)
+scale = Vector2(0.07, 0.07)
 texture = ExtResource("1_bpr0q")

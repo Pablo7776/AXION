@@ -1,16 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1755793777
-default_bus_layout.tres::AudioBusLayout::5086961324228288978::1755790169::0::1::::<><><>0<>0<><>::
-export_presets.cfg::TextFile/TextFile::-1::1755714432::0::1::::<><><>0<>0<><>::
+::res://::1755831829
+default_bus_layout.tres::AudioBusLayout/AudioBusLayout::5086961324228288978::1755790169::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile/TextFile::-1::1755812738::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::8337952126813218997::1723936402::1755652736::0::::<><><>0<>0<>59574140f21cb690793748c2c25f6b34<>::
 Tema Principal Rework.mp3::AudioStreamMP3/AudioStreamMP3::3495343436627369167::1755729882::1755729883::1::::<><><>0<>0<>f58a19d26812345e90547ef612b58a4a<>res://.godot/imported/Tema Principal Rework.mp3-ddad3757c536e339aefed99b409cc358.mp3str::
-::res://assets/::1755796686
+::res://assets/::1755831158
 abajo.png::CompressedTexture2D/CompressedTexture2D::4424003867241280440::1755664491::1755664510::1::::<><><>0<>0<>76d779c90ae6f52fd08ecc04b0d11b6e<>res://.godot/imported/abajo.png-f82ff80ddaea1f26f3f1a7a3566dd1c2.ctex::
 arriba.png::CompressedTexture2D/CompressedTexture2D::915574424231868186::1755664425::1755664510::1::::<><><>0<>0<>f790087774e5890978b0025a51588056<>res://.godot/imported/arriba.png-8ba86f585e32d785b9c888b63ed9d2b1.ctex::
 Canción principal.mp3::AudioStreamMP3/AudioStreamMP3::1098380023962557525::1755307783::1755320373::1::::<><><>0<>0<>897afe1c51e31cbce6e254b6fc982a02<>res://.godot/imported/Canción principal.mp3-25dc7f40beceabbd2eaae70310857b33.mp3str::
-cursor2.svg::CompressedTexture2D::5497531530830074416::1755793765::1755793769::1::::<><><>0<>0<>69787796debee62a7511d72fdcdfc163<>res://.godot/imported/cursor2.svg-9efc23be39fd4f87b4917bb932cc3163.ctex::
-cursor3.svg::CompressedTexture2D::5467888395508934724::1755793810::1755793863::1::::<><><>0<>0<>57f3e6c556c34c4902d64de4ee586af0<>res://.godot/imported/cursor3.svg-e705608947843af02cd79364af9ad752.ctex::
-cursor.svg::CompressedTexture2D::8593845821644361334::1755793610::1755793613::1::::<><><>0<>0<>38a396d25795ca83e39a4f525ca3e502<>res://.godot/imported/cursor.svg-c91cd64049656d2add6f4a9dcd9d21c7.ctex::
+cursor2.svg::CompressedTexture2D/CompressedTexture2D::5497531530830074416::1755793765::1755793769::1::::<><><>0<>0<>69787796debee62a7511d72fdcdfc163<>res://.godot/imported/cursor2.svg-9efc23be39fd4f87b4917bb932cc3163.ctex::
+cursor3.svg::CompressedTexture2D/CompressedTexture2D::5467888395508934724::1755793810::1755793863::1::::<><><>0<>0<>57f3e6c556c34c4902d64de4ee586af0<>res://.godot/imported/cursor3.svg-e705608947843af02cd79364af9ad752.ctex::
+cursor.svg::CompressedTexture2D/CompressedTexture2D::8593845821644361334::1755793610::1755793613::1::::<><><>0<>0<>38a396d25795ca83e39a4f525ca3e502<>res://.godot/imported/cursor.svg-c91cd64049656d2add6f4a9dcd9d21c7.ctex::
 der.png::CompressedTexture2D/CompressedTexture2D::2360839808007840483::1755652727::1755652736::1::::<><><>0<>0<>67483c6c0e07dcb26cb4a8becbaeb96c<>res://.godot/imported/der.png-6629d08a6393e8d0b9a6e5ba70d97f8b.ctex::
 iz.png::CompressedTexture2D/CompressedTexture2D::2739604935338244832::1755652664::1755652736::1::::<><><>0<>0<>297574ac11d99ad56cdc0ce50786013f<>res://.godot/imported/iz.png-43f72caee40f20039b2dad1afbef261d.ctex::
 metronomo60.mp3::AudioStreamMP3/AudioStreamMP3::1050115957052526136::1755315600::1755316840::1::::<><><>0<>0<>75ff316bf3ff1dd68c182ce99ef57514<>res://.godot/imported/metronomo60.mp3-9a2cc50dbe397e2034665e7383cce4d0.mp3str::
@@ -19,34 +19,44 @@ tambor.mp3::AudioStreamMP3/AudioStreamMP3::7388834800387005903::1755188403::1755
 Tema Principal Rework.mp3::AudioStreamMP3/AudioStreamMP3::8836305099706384729::1755718291::1755729940::1::::<><><>0<>0<>91f58eb44e0cc9cc0c572acfae664749<>res://.godot/imported/Tema Principal Rework.mp3-8409c2d268141f7d0b8354b58e80cb76.mp3str::
 ::res://assets/Fondo/::1755569142
 fondo mega generico.png::CompressedTexture2D/CompressedTexture2D::1240738643639362660::1755265847::1755569142::1::::<><><>0<>0<>8ecd9b9318488f3154ad736ce4ebd27f<>res://.godot/imported/fondo mega generico.png-16b42a40561a6fe8db936948520d5009.ctex::
-::res://assets/fonts/::1755796834
-::res://assets/fonts/jmh_cthulhumbus/::1755796817
-JMH_Cthulhumbus.otf::FontFile::9163279106275086483::1723011028::1755796842::1::::<><><>0<>0<>ad4b01025cb30627abfb96f1b17387e0<>res://.godot/imported/JMH_Cthulhumbus.otf-da085510496d92ccf681b2406956d1c4.fontdata::
-JMH_Cthulhumbus.ttf::FontFile::2788367450652442806::1723011018::1755796842::1::::<><><>0<>0<>e7a96d55d8bc9c39bd5bad34d8ea7e96<>res://.godot/imported/JMH_Cthulhumbus.ttf-dae90758af996881121396c0d96b5ba9.fontdata::
-Personal Use Only-User Terms Agreement.txt::TextFile::-1::1723011256::0::1::::<><><>0<>0<><>::
-::res://assets/fonts/lovecraft/::1755796834
-lovecraft.otf::FontFile::3233866270791361936::1628423658::1755796842::1::::<><><>0<>0<>4bf96437aaab3cf5408ea20398d757e2<>res://.godot/imported/lovecraft.otf-5256123b6fcf5502f3f7e0ba89c46456.fontdata::
-Read Me !!!.txt::TextFile::-1::1628423842::0::1::::<><><>0<>0<><>::
+::res://assets/fonts/::1755830687
+::res://assets/fonts/Another Danger - Demo Regular/::1755830711
+Another Danger - Demo Regular.otf::FontFile/FontFile::7291367255415204110::1628551646::1755830711::1::::<><><>0<>0<>05fe159a524bda5b9f41ccb07f4032b7<>res://.godot/imported/Another Danger - Demo Regular.otf-d30ac324684050f9595f698a0bbe58ef.fontdata::
+::res://assets/fonts/jmh_cthulhumbus/::1755796842
+JMH_Cthulhumbus.otf::FontFile/FontFile::9163279106275086483::1723011028::1755796842::1::::<><><>0<>0<>ad4b01025cb30627abfb96f1b17387e0<>res://.godot/imported/JMH_Cthulhumbus.otf-da085510496d92ccf681b2406956d1c4.fontdata::
+JMH_Cthulhumbus.ttf::FontFile/FontFile::2788367450652442806::1723011018::1755796842::1::::<><><>0<>0<>e7a96d55d8bc9c39bd5bad34d8ea7e96<>res://.godot/imported/JMH_Cthulhumbus.ttf-dae90758af996881121396c0d96b5ba9.fontdata::
+Personal Use Only-User Terms Agreement.txt::TextFile/TextFile::-1::1723011256::0::1::::<><><>0<>0<><>::
+::res://assets/fonts/lovecraft/::1755796842
+lovecraft.otf::FontFile/FontFile::3233866270791361936::1628423658::1755796842::1::::<><><>0<>0<>4bf96437aaab3cf5408ea20398d757e2<>res://.godot/imported/lovecraft.otf-5256123b6fcf5502f3f7e0ba89c46456.fontdata::
+Read Me !!!.txt::TextFile/TextFile::-1::1628423842::0::1::::<><><>0<>0<><>::
+::res://assets/Interfaz - mecánica /::1755831829
+flechaAbajo.png::CompressedTexture2D/CompressedTexture2D::1845466972932471796::1755761638::1755831225::1::::<><><>0<>0<>dffa1d2fb22ca0165cb1c0ceef5df18f<>res://.godot/imported/flechaAbajo.png-29950ea70cf685cd493b499f6ade0370.ctex::
+flechaArriba.png::CompressedTexture2D/CompressedTexture2D::5482558563700462555::1755761433::1755831563::1::::<><><>0<>0<>d71413ac9f028dfd2e696d6462048e98<>res://.godot/imported/flechaArriba.png-d42b7391e37a695578c998e2c849a5eb.ctex::
+flechaDerecha.png::CompressedTexture2D/CompressedTexture2D::6212637100300157583::1755761542::1755831713::1::::<><><>0<>0<>62ad612defb98aae84b521014dff8e04<>res://.godot/imported/flechaDerecha.png-88bee6be4447b74387ce556952e9f993.ctex::
+flechaIzquierda.png::CompressedTexture2D::4029846298670108072::1755761695::1755831830::1::::<><><>0<>0<>a48d1dab3d98935c3ae06a0d59fc1d97<>res://.godot/imported/flechaIzquierda.png-f6f90088c2dd2fe488770148647abb97.ctex::
 ::res://assets/Personajes/::1755569326
 Beto el Queleco 1.png::CompressedTexture2D/CompressedTexture2D::6716522328801339929::1755265544::1755569325::1::::<><><>0<>0<>49f5d9cba0f992bf868f7e4cbbcb43cb<>res://.godot/imported/Beto el Queleco 1.png-94fb45385620727781b97e40b18efcad.ctex::
 Beto el Queleco 2 - auriculares.png::CompressedTexture2D/CompressedTexture2D::2770429753244465912::1755265590::1755569324::1::::<><><>0<>0<>29c4bf683d583b25f2839d90f6c87752<>res://.godot/imported/Beto el Queleco 2 - auriculares.png-e363bb6672c22c93641387c9c1c3e146.ctex::
 Gordo turbina formido.png::CompressedTexture2D/CompressedTexture2D::1712862616109845266::1755265325::1755569326::1::::<><><>0<>0<>7754c01bd227e3e9c3b99cadc8c7712f<>res://.godot/imported/Gordo turbina formido.png-12cf56d8ff817880e302b85a4ddc7894.ctex::
 Jefe - introductor.png::CompressedTexture2D/CompressedTexture2D::6899333563545863319::1755265493::1755569324::1::::<><><>0<>0<>8afeebf64a425160f1ef7f224e3a5700<>res://.godot/imported/Jefe - introductor.png-4956ecb395a5162b16e8b16b010871a5.ctex::
+::res://creditos/::1755831469
+creditos.gd::GDScript/GDScript::2685509513040952948::1755812089::0::1::::<>Control<><>0<>0<><>::
+creditos.tscn::PackedScene/PackedScene::2429739773383596829::1755831469::0::1::::<><><>0<>0<><>::uid://bei47jofcujsm::::res://creditos/creditos.gd<>uid://d3s04rsewu716::::res://assets/fonts/jmh_cthulhumbus/JMH_Cthulhumbus.otf
 ::res://escenas/::1754968538
 ejemploBasico.tscn::PackedScene/PackedScene::3651093641781450930::1754968538::0::1::::<><><>0<>0<><>::uid://b4jvm64bxbuyi::::res://scripts/ejemplo_basico.gd<>uid://dq174apvbno6h::::res://icon.svg<>uid://bphxavhbwt5eh::::res://assets/425556__t_roy_920__rock-808-beat.mp3<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png<>uid://c05gqgpyktbf3::::res://menuInicio/botonVolver.tscn
 ::res://global/::1755361552
 juego.gd::GDScript/GDScript::7009526942554062775::1755361552::0::1::::<>Node<><>0<>0<><>::
-::res://historia/::1755613610
-historia1.tscn::PackedScene/PackedScene::2595344132858868141::1755613610::0::1::::<><><>0<>0<><>::uid://bhtsccaxbn74n::::res://historia/historia_1.gd<>uid://rxa1wrwywns3::::res://assets/Fondo/fondo mega generico.png<>uid://c5kdasip4ttwx::::res://assets/Personajes/Jefe - introductor.png<>uid://pwcfnipdemsr::::res://assets/Canción principal.mp3
+::res://historia/::1755831469
+historia1.tscn::PackedScene/PackedScene::2595344132858868141::1755831469::0::1::::<><><>0<>0<><>::uid://bhtsccaxbn74n::::res://historia/historia_1.gd<>uid://rxa1wrwywns3::::res://assets/Fondo/fondo mega generico.png<>uid://c5kdasip4ttwx::::res://assets/Personajes/Jefe - introductor.png<>uid://d3s04rsewu716::::res://assets/fonts/jmh_cthulhumbus/JMH_Cthulhumbus.otf<>uid://pwcfnipdemsr::::res://assets/Canción principal.mp3
 historia_1.gd::GDScript/GDScript::2918062350037669951::1755573462::0::1::::<>Control<><>0<>0<><>::
-::res://historia/historia2/::1755613610
-historia2.tscn::PackedScene/PackedScene::7600672247577941116::1755613610::0::1::::<><><>0<>0<><>::uid://rxa1wrwywns3::::res://assets/Fondo/fondo mega generico.png<>uid://c3cmsosem663i::::res://historia/historia2/historia_2.gd<>uid://c2xse2r58evl6::::res://assets/Personajes/Beto el Queleco 1.png<>uid://o7xiyndtsxo7::::res://assets/metronomo60.mp3
+::res://historia/historia2/::1755831469
+historia2.tscn::PackedScene/PackedScene::7600672247577941116::1755831469::0::1::::<><><>0<>0<><>::uid://rxa1wrwywns3::::res://assets/Fondo/fondo mega generico.png<>uid://c3cmsosem663i::::res://historia/historia2/historia_2.gd<>uid://c2xse2r58evl6::::res://assets/Personajes/Beto el Queleco 1.png<>uid://o7xiyndtsxo7::::res://assets/metronomo60.mp3
 historia_2.gd::GDScript/GDScript::6743019256295128564::1755573329::0::1::::<>Control<><>0<>0<><>::
-::res://menuInicio/::1755795129
+::res://menuInicio/::1755831469
 botonVolver.tscn::PackedScene/PackedScene::6589887005034610882::1754968538::0::1::::<><><>0<>0<><>::uid://curfp4hw8inf0::::res://menuInicio/boton_volver.gd
 boton_volver.gd::GDScript/GDScript::6212044568873064903::1754940758::0::1::::<>Button<><>0<>0<><>::
-inicio.gd::GDScript/GDScript::3357066603710857872::1755613601::0::1::::<>Control<><>0<>0<><>::
-inicio.tscn::PackedScene::432782682123900959::1755795129::0::1::::<><><>0<>0<><>::uid://bn3gnqlvi02lg::::res://menuInicio/inicio.gd<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png
+inicio.gd::GDScript/GDScript::3357066603710857872::1755812265::0::1::::<>Control<><>0<>0<><>::
+inicio.tscn::PackedScene/PackedScene::432782682123900959::1755831469::0::1::::<><><>0<>0<><>::uid://bn3gnqlvi02lg::::res://menuInicio/inicio.gd<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png<>uid://d3s04rsewu716::::res://assets/fonts/jmh_cthulhumbus/JMH_Cthulhumbus.otf<>uid://bmcrkmt7yev73::::res://assets/fonts/lovecraft/lovecraft.otf
 ::res://prototipo1/::1754851969
 ::res://PROTOTIPO2/::1754852589
 ::res://PROTOTIPO2/escenas/::1755139691
@@ -68,21 +78,21 @@ cuadradoMagicoInverso.tscn::PackedScene/PackedScene::7451540083049825242::175513
 cuadrado_magico.gd::GDScript/GDScript::3974879604681179108::1755012446::0::1::::<>Node2D<><>0<>0<><>::
 RotacionCuadrado.tscn::PackedScene/PackedScene::380337655238309493::1755139691::0::1::::<><><>0<>0<><>::uid://gpj24173ew4f::::res://PROTOTIPO4/rotacion_cuadrado.gd
 rotacion_cuadrado.gd::GDScript/GDScript::452694962343024919::1755011803::0::1::::<>Node2D<><>0<>0<><>::
-::res://PROTOTIPO5/::1755795129
-main.gd::GDScript::4162148927319557935::1755749080::0::1::::<>Node2D<><>0<>0<><>::
-Main.tscn::PackedScene::8345857032336542688::1755795129::0::1::::<><><>0<>0<><>::uid://b0kf8qmblys7x::::res://PROTOTIPO5/main.gd<>uid://d3phyav16xrbj::::res://PROTOTIPO6efectos/efecto.tscn<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png<>uid://ddjhbai8eqqmx::::res://assets/tambor.mp3<>uid://dx5mwiaq3goyb::::res://assets/Tema Principal Rework.mp3
-NotaAbajo.tscn::PackedScene::5055445089176609714::1755729087::0::1::::<><><>0<>0<><>::uid://b4baxyegok3cu::::res://assets/abajo.png
-NotaArriba.tscn::PackedScene::927037152444316464::1755729087::0::1::::<><><>0<>0<><>::uid://nbrm22uw58pi::::res://assets/arriba.png
-NotaDerecha.tscn::PackedScene::4755384886596587452::1755729087::0::1::::<><><>0<>0<><>::uid://8vuxl3v2tx6b::::res://assets/der.png
-NotaIzquierda.tscn::PackedScene::1253862545392176260::1755729087::0::1::::<><><>0<>0<><>::uid://bfbc5mln03trc::::res://assets/iz.png
+::res://PROTOTIPO5/::1755831780
+main.gd::GDScript/GDScript::4162148927319557935::1755749080::0::1::::<>Node2D<><>0<>0<><>::
+Main.tscn::PackedScene/PackedScene::8345857032336542688::1755831469::0::1::::<><><>0<>0<><>::uid://b0kf8qmblys7x::::res://PROTOTIPO5/main.gd<>uid://d3phyav16xrbj::::res://PROTOTIPO6efectos/efecto.tscn<>uid://ddbjwtdmmrndy::::res://assets/png boceto basico del mimido.png<>uid://ddjhbai8eqqmx::::res://assets/tambor.mp3<>uid://dx5mwiaq3goyb::::res://assets/Tema Principal Rework.mp3
+NotaAbajo.tscn::PackedScene/PackedScene::5055445089176609714::1755831469::0::1::::<><><>0<>0<><>::uid://1j7totatuijs::::res://assets/Interfaz - mecánica /flechaAbajo.png
+NotaArriba.tscn::PackedScene/PackedScene::927037152444316464::1755831630::0::1::::<><><>0<>0<><>::uid://ckd1657crx87p::::res://assets/Interfaz - mecánica /flechaArriba.png
+NotaDerecha.tscn::PackedScene::4755384886596587452::1755831780::0::1::::<><><>0<>0<><>::uid://curphwryoxqwl::::res://assets/Interfaz - mecánica /flechaDerecha.png
+NotaIzquierda.tscn::PackedScene/PackedScene::1253862545392176260::1755729087::0::1::::<><><>0<>0<><>::uid://bfbc5mln03trc::::res://assets/iz.png
 resultado.gd::GDScript/GDScript::2648135288448601751::1755363623::0::1::::<>Control<><>0<>0<><>::
 Resultado.tscn::PackedScene/PackedScene::5505939149311093732::1755613610::0::1::::<><><>0<>0<><>::uid://bdy1nv53dpbdf::::res://PROTOTIPO5/resultado.gd<>uid://rxa1wrwywns3::::res://assets/Fondo/fondo mega generico.png
-secuenciaAbajo.gd::GDScript::5875160692448235210::1755729729::0::1::::SecuenciaAbajo<>Resource<><>0<>0<><>::
-secuenciaArriba.gd::GDScript::2912338759209174538::1755664996::0::1::::SecuenciaArriba<>Resource<><>0<>0<><>::
-secuenciaDerecha.gd::GDScript::4583005793475176716::1755712964::0::1::::SecuenciaDerecha<>Resource<><>0<>0<><>::
-secuenciaIzquierda.gd::GDScript::9172270370485895007::1755653659::0::1::::SecuenciaIzquierda<>Resource<><>0<>0<><>::
-::res://PROTOTIPO6efectos/::1755795129
+secuenciaAbajo.gd::GDScript/GDScript::5875160692448235210::1755729729::0::1::::SecuenciaAbajo<>Resource<><>0<>0<><>::
+secuenciaArriba.gd::GDScript/GDScript::2912338759209174538::1755664996::0::1::::SecuenciaArriba<>Resource<><>0<>0<><>::
+secuenciaDerecha.gd::GDScript/GDScript::4583005793475176716::1755712964::0::1::::SecuenciaDerecha<>Resource<><>0<>0<><>::
+secuenciaIzquierda.gd::GDScript/GDScript::9172270370485895007::1755653659::0::1::::SecuenciaIzquierda<>Resource<><>0<>0<><>::
+::res://PROTOTIPO6efectos/::1755831469
 efecto.gd::GDScript/GDScript::8421095540561686411::1755271121::0::1::::<>Node2D<><>0<>0<><>::
-efecto.tscn::PackedScene::9155983250922753175::1755795129::0::1::::<><><>0<>0<><>::uid://dr8ihiqhw7o5x::::res://PROTOTIPO6efectos/efecto.gd<>uid://dx5mwiaq3goyb::::res://assets/Tema Principal Rework.mp3
+efecto.tscn::PackedScene/PackedScene::9155983250922753175::1755831469::0::1::::<><><>0<>0<><>::uid://dr8ihiqhw7o5x::::res://PROTOTIPO6efectos/efecto.gd<>uid://dx5mwiaq3goyb::::res://assets/Tema Principal Rework.mp3
 ::res://scripts/::1754795060
 ejemplo_basico.gd::GDScript/GDScript::4441774708456949600::1754795060::0::1::::<>Control<><>0<>0<><>::

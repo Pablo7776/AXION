@@ -1,9 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://dgj27xowh0t61"]
+[gd_scene load_steps=11 format=3 uid="uid://dgj27xowh0t61"]
 
-[ext_resource type="Texture2D" uid="uid://rxa1wrwywns3" path="res://assets/Fondo/fondo mega generico.png" id="1_bjaam"]
 [ext_resource type="Script" uid="uid://c3cmsosem663i" path="res://historia/historia2/historia_2.gd" id="1_jj2v5"]
+[ext_resource type="Texture2D" uid="uid://bmn6bpt4kxxwu" path="res://assets/Resto de cosas de fondo e interface/Pantalla Fondo general 1.png" id="2_l0ojt"]
 [ext_resource type="Texture2D" uid="uid://c2xse2r58evl6" path="res://assets/Personajes/Beto el Queleco 1.png" id="2_y03ww"]
+[ext_resource type="FontFile" uid="uid://bmcrkmt7yev73" path="res://assets/fonts/lovecraft/lovecraft.otf" id="4_0r4u5"]
 [ext_resource type="AudioStream" uid="uid://o7xiyndtsxo7" path="res://assets/metronomo60.mp3" id="4_e0w08"]
+[ext_resource type="Texture2D" uid="uid://b62s816hy02mm" path="res://assets/Botones claros y oscuros/Opciones individual oscuro.png" id="6_c0e15"]
+[ext_resource type="Texture2D" uid="uid://0oobgep5c0p2" path="res://assets/Resto de cosas de fondo e interface/Opciones individual.png" id="7_fevwk"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1knxi"]
+texture = ExtResource("6_c0e15")
+expand_margin_bottom = 33.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_03ju5"]
+texture = ExtResource("6_c0e15")
+expand_margin_bottom = 33.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mjbad"]
+texture = ExtResource("7_fevwk")
+expand_margin_bottom = 33.0
 
 [node name="Historia2" type="Control"]
 layout_mode = 3
@@ -14,25 +29,30 @@ script = ExtResource("1_jj2v5")
 layout_mode = 0
 offset_right = 1746.0
 offset_bottom = 1080.0
-texture = ExtResource("1_bjaam")
+texture = ExtResource("2_l0ojt")
 expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 1217.0
-offset_top = -22.0
-offset_right = 1858.0
-offset_bottom = 614.0
+offset_left = 1177.0
+offset_top = 45.0
+offset_right = 1818.0
+offset_bottom = 681.0
 texture = ExtResource("2_y03ww")
 expand_mode = 3
 stretch_mode = 4
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 85.0
-offset_top = 78.0
-offset_right = 1188.0
-offset_bottom = 1081.0
+offset_left = 178.0
+offset_top = 135.0
+offset_right = 1105.0
+offset_bottom = 902.0
+theme_override_colors/default_color = Color(0, 0.835294, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.062622, 0.062622, 0.062622, 1)
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_offset_x = 5
+theme_override_fonts/normal_font = ExtResource("4_0r4u5")
 theme_override_font_sizes/normal_font_size = 55
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
@@ -40,21 +60,28 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 stream = ExtResource("4_e0w08")
 
 [node name="Button" type="Button" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 1323.0
-offset_top = 667.0
+offset_top = 778.0
 offset_right = 1569.0
-offset_bottom = 751.0
+offset_bottom = 862.0
 theme_override_font_sizes/font_size = 55
 text = "escuchar"
 
 [node name="Button2" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1315.0
-offset_top = 832.0
-offset_right = 1575.0
-offset_bottom = 916.0
-theme_override_font_sizes/font_size = 55
+offset_left = 582.0
+offset_top = 873.0
+offset_right = 1283.0
+offset_bottom = 1010.0
+focus_mode = 0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0r4u5")
+theme_override_font_sizes/font_size = 84
+theme_override_styles/hover = SubResource("StyleBoxTexture_1knxi")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_03ju5")
+theme_override_styles/normal = SubResource("StyleBoxTexture_mjbad")
 text = "jugar"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

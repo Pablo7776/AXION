@@ -9,7 +9,7 @@ func _iniciar_metronomo(sprite: Sprite2D) -> void:
 	var tween = create_tween()
 	tween.set_loops()  # repetir infinitamente
 	# Escala a 0.115 en 0.5s
-	tween.tween_property(sprite, "scale", Vector2(0.105, 0.105), 1).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	tween.tween_property(sprite, "scale", Vector2(0.115, 0.115), 1).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	# Luego vuelve a 0.1 en 0.5s
 	tween.tween_property(sprite, "scale", Vector2(0.1, 0.1), 1).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 

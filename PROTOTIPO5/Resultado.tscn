@@ -1,7 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://ckpeappfj2svk"]
+[gd_scene load_steps=10 format=3 uid="uid://ckpeappfj2svk"]
 
 [ext_resource type="Script" uid="uid://bdy1nv53dpbdf" path="res://PROTOTIPO5/resultado.gd" id="1_gu8q5"]
-[ext_resource type="Texture2D" uid="uid://rxa1wrwywns3" path="res://assets/Fondo/fondo mega generico.png" id="2_go2y1"]
+[ext_resource type="Texture2D" uid="uid://bmn6bpt4kxxwu" path="res://assets/Resto de cosas de fondo e interface/Pantalla Fondo general 1.png" id="2_id0ko"]
+[ext_resource type="FontFile" uid="uid://bmcrkmt7yev73" path="res://assets/fonts/lovecraft/lovecraft.otf" id="3_id0ko"]
+[ext_resource type="Texture2D" uid="uid://b62s816hy02mm" path="res://assets/Botones claros y oscuros/Opciones individual oscuro.png" id="4_47igb"]
+[ext_resource type="Texture2D" uid="uid://b3nlsdfl6fp8" path="res://assets/Botones claros y oscuros/Opciones individual claro.png" id="5_1rg65"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1rg65"]
+texture = ExtResource("4_47igb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_47igb"]
+texture = ExtResource("4_47igb")
+expand_margin_bottom = 33.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_803xj"]
+content_margin_top = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("4_47igb")
+texture_margin_bottom = 11.0
+expand_margin_top = 10.0
+expand_margin_bottom = 33.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yie3c"]
+texture = ExtResource("5_1rg65")
+expand_margin_bottom = 33.0
 
 [node name="Resultado" type="Control"]
 layout_mode = 3
@@ -12,7 +34,7 @@ script = ExtResource("1_gu8q5")
 layout_mode = 0
 offset_right = 1746.0
 offset_bottom = 1080.0
-texture = ExtResource("2_go2y1")
+texture = ExtResource("2_id0ko")
 expand_mode = 1
 
 [node name="LabelResultado" type="Label" parent="."]
@@ -22,15 +44,37 @@ offset_top = 344.0
 offset_right = 1275.0
 offset_bottom = 627.0
 theme_override_font_sizes/font_size = 100
-text = "hola"
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1521.0
-offset_top = 77.0
-offset_right = 1652.0
-offset_bottom = 161.0
-theme_override_font_sizes/font_size = 55
-text = "x"
+offset_left = 547.0
+offset_top = 826.0
+offset_right = 1266.0
+offset_bottom = 1020.0
+focus_mode = 0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_id0ko")
+theme_override_font_sizes/font_size = 83
+theme_override_styles/hover = SubResource("StyleBoxTexture_1rg65")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_47igb")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_803xj")
+theme_override_styles/normal = SubResource("StyleBoxTexture_yie3c")
+text = "volver"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 522.0
+offset_top = 201.0
+offset_right = 1496.0
+offset_bottom = 555.0
+theme_override_colors/default_color = Color(0, 0.835294, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.066755, 0.066755, 0.066755, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/normal_font = ExtResource("3_id0ko")
+theme_override_font_sizes/normal_font_size = 64
+text = "gdsfgsdfgs"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

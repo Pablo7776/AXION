@@ -12,3 +12,7 @@ res://PROTOTIPO5/secuenciaDerecha.gd
 res://PROTOTIPO5/secuenciaArriba.gd
 res://PROTOTIPO5/main.gd
 res://menuInicio/inicio.gd
+res://PROTOTIPO5/efectoFuego.tscn
+res://PROTOTIPO5/Resultado.tscn
+res://global/juego.gd
+res://PROTOTIPO5/resultado.gd

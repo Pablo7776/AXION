@@ -1,10 +1,24 @@
-[gd_scene load_steps=6 format=3 uid="uid://bc8g66ea1gw5j"]
+[gd_scene load_steps=11 format=3 uid="uid://bc8g66ea1gw5j"]
 
 [ext_resource type="Script" uid="uid://bhtsccaxbn74n" path="res://historia/historia_1.gd" id="1_d3mim"]
-[ext_resource type="Texture2D" uid="uid://rxa1wrwywns3" path="res://assets/Fondo/fondo mega generico.png" id="1_gh2c5"]
+[ext_resource type="Texture2D" uid="uid://bmn6bpt4kxxwu" path="res://assets/Resto de cosas de fondo e interface/Pantalla Fondo general 1.png" id="2_bigqn"]
 [ext_resource type="Texture2D" uid="uid://c5kdasip4ttwx" path="res://assets/Personajes/Jefe - introductor.png" id="2_qw57c"]
-[ext_resource type="FontFile" uid="uid://d3s04rsewu716" path="res://assets/fonts/jmh_cthulhumbus/JMH_Cthulhumbus.otf" id="4_bigqn"]
+[ext_resource type="FontFile" uid="uid://bmcrkmt7yev73" path="res://assets/fonts/lovecraft/lovecraft.otf" id="4_ey1yu"]
 [ext_resource type="AudioStream" uid="uid://pwcfnipdemsr" path="res://assets/Canción principal.mp3" id="4_spcha"]
+[ext_resource type="Texture2D" uid="uid://b3nlsdfl6fp8" path="res://assets/Botones claros y oscuros/Opciones individual claro.png" id="6_ey1yu"]
+[ext_resource type="Texture2D" uid="uid://b62s816hy02mm" path="res://assets/Botones claros y oscuros/Opciones individual oscuro.png" id="6_g60h0"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g60h0"]
+texture = ExtResource("6_g60h0")
+expand_margin_bottom = 33.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ma7mq"]
+texture = ExtResource("6_g60h0")
+expand_margin_bottom = 33.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ec6kl"]
+texture = ExtResource("6_ey1yu")
+expand_margin_bottom = 33.0
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -19,7 +33,7 @@ script = ExtResource("1_d3mim")
 layout_mode = 0
 offset_right = 1746.0
 offset_bottom = 1080.0
-texture = ExtResource("1_gh2c5")
+texture = ExtResource("2_bigqn")
 expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="."]
@@ -33,12 +47,17 @@ expand_mode = 1
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 90.0
-offset_top = 93.0
-offset_right = 1158.0
-offset_bottom = 1048.0
-theme_override_fonts/normal_font = ExtResource("4_bigqn")
-theme_override_font_sizes/normal_font_size = 55
+offset_left = 64.0
+offset_top = 38.0
+offset_right = 1173.0
+offset_bottom = 934.0
+theme_override_colors/default_color = Color(0, 0.835294, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.125911, 0.125911, 0.125911, 1)
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_outline_size = 7
+theme_override_fonts/normal_font = ExtResource("4_ey1yu")
+theme_override_font_sizes/normal_font_size = 64
 text = "Azatoht duerme.
 Por el bien de la realidad… así debe seguir.
 
@@ -63,11 +82,16 @@ stream = ExtResource("4_spcha")
 
 [node name="siguiente" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1207.0
-offset_top = 840.0
-offset_right = 1525.0
-offset_bottom = 950.0
-theme_override_font_sizes/font_size = 55
+offset_left = 573.0
+offset_top = 849.0
+offset_right = 1290.0
+offset_bottom = 1045.0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("4_ey1yu")
+theme_override_font_sizes/font_size = 83
+theme_override_styles/hover = SubResource("StyleBoxTexture_g60h0")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ma7mq")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ec6kl")
 text = "siguiente"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

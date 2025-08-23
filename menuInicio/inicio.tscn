@@ -155,6 +155,7 @@ text = "proto 3"
 [node name="Button4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
+theme_override_constants/outline_size = 20
 theme_override_constants/h_separation = 0
 theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("4_e5w6v")
@@ -170,6 +171,7 @@ text = "jugar"
 
 [node name="Button5" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_e5w6v")
 theme_override_font_sizes/font_size = 83
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1iiym")
@@ -183,6 +185,7 @@ text = "historia"
 
 [node name="Button6" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_e5w6v")
 theme_override_font_sizes/font_size = 83
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1iiym")
@@ -196,6 +199,7 @@ text = "créditos"
 
 [node name="salir" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_e5w6v")
 theme_override_font_sizes/font_size = 83
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1iiym")

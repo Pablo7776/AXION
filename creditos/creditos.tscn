@@ -1,8 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://bau8puxuy4hrx"]
+[gd_scene load_steps=9 format=3 uid="uid://bau8puxuy4hrx"]
 
 [ext_resource type="Script" uid="uid://bei47jofcujsm" path="res://creditos/creditos.gd" id="1_axor1"]
 [ext_resource type="Texture2D" uid="uid://bmn6bpt4kxxwu" path="res://assets/Resto de cosas de fondo e interface/Pantalla Fondo general 1.png" id="2_4ft0k"]
-[ext_resource type="FontFile" uid="uid://d3s04rsewu716" path="res://assets/fonts/jmh_cthulhumbus/JMH_Cthulhumbus.otf" id="2_gpfny"]
+[ext_resource type="FontFile" uid="uid://bmcrkmt7yev73" path="res://assets/fonts/lovecraft/lovecraft.otf" id="3_4ft0k"]
+[ext_resource type="Texture2D" uid="uid://b62s816hy02mm" path="res://assets/Botones claros y oscuros/Opciones individual oscuro.png" id="4_abkrk"]
+[ext_resource type="Texture2D" uid="uid://b3nlsdfl6fp8" path="res://assets/Botones claros y oscuros/Opciones individual claro.png" id="5_qdsmr"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_abkrk"]
+texture = ExtResource("4_abkrk")
+texture_margin_bottom = 11.0
+expand_margin_top = 10.0
+expand_margin_bottom = 39.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qdsmr"]
+texture = ExtResource("4_abkrk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hl8ox"]
+texture = ExtResource("5_qdsmr")
 
 [node name="Creditos" type="Control"]
 layout_mode = 3
@@ -34,56 +48,87 @@ anchors_preset = 13
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -386.0
-offset_top = 286.0
-offset_right = 386.0
-offset_bottom = -191.0
+offset_left = -407.0
+offset_top = 146.0
+offset_right = 407.0
+offset_bottom = -177.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 50
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_gpfny")
-theme_override_font_sizes/font_size = 40
-text = "Mateo Van Der Walt: Audio "
+theme_override_colors/font_color = Color(0, 0.835294, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("3_4ft0k")
+theme_override_font_sizes/font_size = 64
+text = "Mateo Van Der Walt: Audio y Música"
 horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_gpfny")
-theme_override_font_sizes/font_size = 40
+theme_override_colors/font_color = Color(0, 0.835294, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("3_4ft0k")
+theme_override_font_sizes/font_size = 64
 text = "Saúl Alberto Arcucci: Arte 2D "
 horizontal_alignment = 1
 
 [node name="Label3" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_gpfny")
-theme_override_font_sizes/font_size = 40
+theme_override_colors/font_color = Color(0, 0.835294, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("3_4ft0k")
+theme_override_font_sizes/font_size = 64
 text = "Juan Bucci: Narrativa"
 horizontal_alignment = 1
 
 [node name="Label4" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_gpfny")
-theme_override_font_sizes/font_size = 40
-text = "Pablo Duran: Programación"
+theme_override_colors/font_color = Color(0, 0.835294, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("3_4ft0k")
+theme_override_font_sizes/font_size = 64
+text = "Pablo Durán: Programación"
 horizontal_alignment = 1
 
 [node name="Label5" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_gpfny")
-theme_override_font_sizes/font_size = 40
-text = "Luciano Rodríguez :  Audio"
+theme_override_colors/font_color = Color(0, 0.835294, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("3_4ft0k")
+theme_override_font_sizes/font_size = 64
+text = "Luciano Rodríguez:  Audio y Música"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1582.0
-offset_top = 65.0
-offset_right = 1678.0
-offset_bottom = 149.0
-theme_override_font_sizes/font_size = 55
-text = "x"
+offset_left = 555.0
+offset_top = 855.0
+offset_right = 1209.0
+offset_bottom = 1038.0
+focus_mode = 0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_4ft0k")
+theme_override_font_sizes/font_size = 83
+theme_override_styles/hover = SubResource("StyleBoxTexture_abkrk")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qdsmr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_hl8ox")
+text = "volver"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

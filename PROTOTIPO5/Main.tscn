@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dq52btfdshp6o"]
+[gd_scene load_steps=17 format=3 uid="uid://dq52btfdshp6o"]
 
 [ext_resource type="Script" uid="uid://b0kf8qmblys7x" path="res://PROTOTIPO5/main.gd" id="1_on1ap"]
 [ext_resource type="PackedScene" uid="uid://d3phyav16xrbj" path="res://PROTOTIPO6efectos/efecto.tscn" id="2_pbtkh"]
@@ -11,6 +11,20 @@
 [ext_resource type="FontFile" uid="uid://bmcrkmt7yev73" path="res://assets/fonts/lovecraft/lovecraft.otf" id="9_0un60"]
 [ext_resource type="AudioStream" uid="uid://dqhmcdvvhius8" path="res://assets/Sonidos/Slime FX.wav" id="9_g1316"]
 [ext_resource type="AudioStream" uid="uid://bhjn1vnk5ba6" path="res://assets/Sonidos/Bone FX.wav" id="9_ivv0y"]
+[ext_resource type="Texture2D" uid="uid://b1dlbkm5owqip" path="res://assets/Botones claros y oscuros/Opciones mini oscuro.png" id="12_j4nxm"]
+[ext_resource type="Texture2D" uid="uid://dhithecda6von" path="res://assets/Botones claros y oscuros/Opciones mini.png" id="13_6jqtm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cj6en"]
+texture = ExtResource("12_j4nxm")
+expand_margin_bottom = 33.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ind2q"]
+texture = ExtResource("12_j4nxm")
+expand_margin_bottom = 33.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u0r2m"]
+texture = ExtResource("13_6jqtm")
+expand_margin_bottom = 33.0
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_on1ap")
@@ -109,11 +123,17 @@ volume_db = 24.0
 bus = &"sonidoAbajo"
 
 [node name="volver" type="Button" parent="."]
-offset_left = 1564.0
-offset_top = 44.0
-offset_right = 1680.0
-offset_bottom = 151.0
-theme_override_font_sizes/font_size = 40
+offset_left = 1552.0
+offset_top = 8.0
+offset_right = 1824.0
+offset_bottom = 172.0
+focus_mode = 0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("9_0un60")
+theme_override_font_sizes/font_size = 83
+theme_override_styles/hover = SubResource("StyleBoxTexture_cj6en")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ind2q")
+theme_override_styles/normal = SubResource("StyleBoxTexture_u0r2m")
 text = "x"
 
 [node name="LabelAciertos" type="Label" parent="."]

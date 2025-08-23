@@ -42,6 +42,9 @@ var aciertos: int = 0
 var pifies: int = 0
 var lead_time: float = 0.0  # tiempo de anticipación
 
+
+var efecto_fuego_scene: PackedScene = preload("res://PROTOTIPO5/efectoFuego.tscn")
+
 func _ready() -> void:
 	var distancia: float = linea.global_position.y - spawner.global_position.y
 	lead_time = distancia / velocidad
@@ -124,6 +127,12 @@ func _revisar_acierto(contenedor: Node, msg_ok: String, msg_fail: String, sonido
 			print(msg_ok, "dy=", dy)
 			nota.queue_free()
 			sonido.play()
+			#fuego:
+			#var efecto = efecto_fuego_scene.instantiate()
+			#efecto.global_position = linea.global_position  # aparece donde está la línea de aciertos
+			#add_child(efecto)
+			#efecto.emitting = true
+			#fin fuego
 			acierto = true
 			break
 	if not acierto:
@@ -192,7 +201,8 @@ func finalizar_juego() -> void:
 		Juego.resultado = "Bien"
 	else:
 		Juego.resultado = "Seguí practicando"
-
+	
+	Juego.historial.append({"aciertos": aciertos, "pifies": pifies})
 	get_tree().change_scene_to_file("res://PROTOTIPO5/Resultado.tscn")
 
 func _on_volver_pressed() -> void:

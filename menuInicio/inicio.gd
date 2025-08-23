@@ -1,5 +1,41 @@
 extends Control
 
+@onready var titulo: Sprite2D = $titulo
+
+func _ready() -> void:
+	_iniciar_metronomo(titulo)
+
+func _iniciar_metronomo(sprite: Sprite2D) -> void:
+	var tween = create_tween()
+	tween.set_loops()  # repetir infinitamente
+	# Escala a 0.115 en 0.5s
+	tween.tween_property(sprite, "scale", Vector2(0.105, 0.105), 1).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	# Luego vuelve a 0.1 en 0.5s
+	tween.tween_property(sprite, "scale", Vector2(0.1, 0.1), 1).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://escenas/ejemploBasico.tscn")
 

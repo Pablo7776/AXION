@@ -1,9 +1,58 @@
-[gd_scene load_steps=5 format=3 uid="uid://gfv4q47umgx0"]
+[gd_scene load_steps=18 format=3 uid="uid://gfv4q47umgx0"]
 
 [ext_resource type="Script" uid="uid://bn3gnqlvi02lg" path="res://menuInicio/inicio.gd" id="1_ocxu5"]
+[ext_resource type="Texture2D" uid="uid://besr8us4vsvyb" path="res://assets/Resto de cosas de fondo e interface/Pantalla de inicio sin nombre.png" id="2_e5w6v"]
 [ext_resource type="Texture2D" uid="uid://ddbjwtdmmrndy" path="res://assets/png boceto basico del mimido.png" id="2_qrfih"]
+[ext_resource type="Texture2D" uid="uid://d03g6ql6f0b31" path="res://assets/Resto de cosas de fondo e interface/Titulo pelado.png" id="3_jpahh"]
 [ext_resource type="FontFile" uid="uid://d3s04rsewu716" path="res://assets/fonts/jmh_cthulhumbus/JMH_Cthulhumbus.otf" id="3_oc8wf"]
 [ext_resource type="FontFile" uid="uid://bmcrkmt7yev73" path="res://assets/fonts/lovecraft/lovecraft.otf" id="4_e5w6v"]
+[ext_resource type="Texture2D" uid="uid://b62s816hy02mm" path="res://assets/Botones claros y oscuros/Opciones individual oscuro.png" id="7_1iiym"]
+[ext_resource type="Texture2D" uid="uid://0oobgep5c0p2" path="res://assets/Resto de cosas de fondo e interface/Opciones individual.png" id="7_jbh45"]
+[ext_resource type="AudioStream" uid="uid://dahi0u31c04qg" path="res://assets/Tema del Menú.mp3" id="9_ftw55"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1iiym"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i6hv4"]
+texture = ExtResource("7_1iiym")
+texture_margin_bottom = 11.0
+expand_margin_top = 10.0
+expand_margin_bottom = 39.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bnb7n"]
+texture = ExtResource("7_1iiym")
+texture_margin_bottom = 11.0
+expand_margin_top = 10.0
+expand_margin_bottom = 39.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wkvrt"]
+texture = ExtResource("7_1iiym")
+texture_margin_bottom = 11.0
+expand_margin_top = 10.0
+expand_margin_bottom = 39.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ftw55"]
+texture = ExtResource("7_1iiym")
+texture_margin_bottom = 11.0
+expand_margin_top = 10.0
+expand_margin_bottom = 39.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_22wjy"]
+texture = ExtResource("7_1iiym")
+texture_margin_bottom = 11.0
+expand_margin_top = 10.0
+expand_margin_bottom = 39.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1iiym"]
+texture = ExtResource("7_jbh45")
+texture_margin_bottom = 11.0
+expand_margin_top = 10.0
+expand_margin_bottom = 39.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jbh45"]
+texture = ExtResource("7_jbh45")
+texture_margin_bottom = 11.0
+expand_margin_top = 10.0
+expand_margin_bottom = 39.0
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -14,18 +63,31 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ocxu5")
 
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(872.656, 540.688)
+scale = Vector2(0.140172, 0.153738)
+texture = ExtResource("2_e5w6v")
+
+[node name="titulo" type="Sprite2D" parent="."]
+position = Vector2(860, 308)
+scale = Vector2(0.114896, 0.126723)
+texture = ExtResource("3_jpahh")
+
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 layout_mode = 0
 offset_right = 1753.0
 offset_bottom = 1223.0
 color = Color(0.134223, 0.0612999, 0.142719, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(920, 538)
 scale = Vector2(0.490995, 0.592147)
 texture = ExtResource("2_qrfih")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -44,11 +106,14 @@ text = "[center][color=#BF0000][wave amp=200 freq=0.04]Kaotic Cosmic[/wave][/col
 horizontal_alignment = 1
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_top = 321.0
-offset_bottom = 564.0
+offset_left = 33.0
+offset_top = 365.0
+offset_right = 33.0
+offset_bottom = 608.0
 grow_horizontal = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 19
@@ -63,10 +128,11 @@ horizontal_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = 553.0
-offset_top = 545.0
-offset_right = 1264.0
-offset_bottom = 1106.0
+offset_left = 506.0
+offset_top = 490.0
+offset_right = 1239.0
+offset_bottom = 1112.0
+theme_override_constants/separation = 13
 
 [node name="Button" type="Button" parent="VBoxContainer"]
 visible = false
@@ -88,27 +154,62 @@ text = "proto 3"
 
 [node name="Button4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme_override_constants/h_separation = 0
+theme_override_constants/line_spacing = 0
 theme_override_fonts/font = ExtResource("4_e5w6v")
 theme_override_font_sizes/font_size = 83
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1iiym")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_i6hv4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_bnb7n")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_wkvrt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ftw55")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_22wjy")
+theme_override_styles/normal = SubResource("StyleBoxTexture_1iiym")
 text = "jugar"
 
 [node name="Button5" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_e5w6v")
 theme_override_font_sizes/font_size = 83
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1iiym")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_i6hv4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_bnb7n")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_wkvrt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ftw55")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_22wjy")
+theme_override_styles/normal = SubResource("StyleBoxTexture_jbh45")
 text = "historia"
 
 [node name="Button6" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_e5w6v")
 theme_override_font_sizes/font_size = 83
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1iiym")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_i6hv4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_bnb7n")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_wkvrt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ftw55")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_22wjy")
+theme_override_styles/normal = SubResource("StyleBoxTexture_jbh45")
 text = "créditos"
 
 [node name="salir" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_e5w6v")
 theme_override_font_sizes/font_size = 83
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1iiym")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_i6hv4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_bnb7n")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_wkvrt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ftw55")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_22wjy")
+theme_override_styles/normal = SubResource("StyleBoxTexture_jbh45")
 text = "salir"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_ftw55")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

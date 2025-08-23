@@ -1,3 +1,4 @@
+AudioStreamPlayer
 Sprite2D
 Button
 Label
@@ -6,7 +7,6 @@ ColorRect
 Control
 RichTextLabel
 AudioStreamPlayer2D
-AudioStreamPlayer
 CollisionShape2D
 Node2D
 TextureRect

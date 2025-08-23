@@ -18,6 +18,9 @@ extends Node2D
 @onready var label_aciertos: Label = $LabelAciertos
 @onready var label_pifies: Label = $LabelPifies
 
+@onready var sprite1: Sprite2D = $Sprite2D2
+@onready var sprite2: Sprite2D = $Sprite2D3
+
 var secuencia_data: SecuenciaDerecha = preload("res://PROTOTIPO5/secuenciaDerecha.gd").new()
 var secuencia_data2: SecuenciaIzquierda = preload("res://PROTOTIPO5/secuenciaIzquierda.gd").new()
 var secuencia_data3: SecuenciaArriba = preload("res://PROTOTIPO5/secuenciaArriba.gd").new()
@@ -49,6 +52,9 @@ func _ready() -> void:
 		secuencia_data3.data.size(),
 		secuencia_data4.data.size())
 	musica.play()
+	
+	_iniciar_metronomo(sprite1)
+	_iniciar_metronomo(sprite2)
 
 func _process(delta: float) -> void:
 	var tiempo_actual: float = musica.get_playback_position()
@@ -123,6 +129,8 @@ func _revisar_acierto(contenedor: Node, msg_ok: String, msg_fail: String, sonido
 	if not acierto:
 		pifies += 1
 		print(msg_fail)
+		_shake_sprite($PngBocetoBasicoDelMimido)  # <--- aquí llamamos al temblor
+		
 
 	label_aciertos.text = "Aciertos: %d" % aciertos
 	label_pifies.text = "Pifies: %d" % pifies
@@ -150,6 +158,22 @@ func spawn_nota4(tecla: String) -> void:
 	n.global_position = spawner4.global_position
 	n.set("tecla", tecla)
 	notas_contenedor4.add_child(n)
+
+func _shake_sprite(sprite: Node2D, duration: float = 0.4, amplitude: float = 30.0) -> void:  # para que tiemble
+	var tween = get_tree().create_tween()  # crea un tween temporal
+	var original_pos = sprite.position
+	var steps = 5
+	for i in range(steps):
+		tween.tween_property(sprite, "position", original_pos + Vector2(randf_range(-amplitude, amplitude), randf_range(-amplitude, amplitude)), duration/steps)
+		tween.tween_property(sprite, "position", original_pos, duration/steps)
+
+
+func _iniciar_metronomo(sprite: Sprite2D) -> void:
+	var tween = create_tween()
+	tween.set_loops()  # hace que se repita infinitamente
+	# Escala a 1.2 en 0.5s, luego vuelve a 1.0 en 0.5s (total 1s por ciclo)
+	tween.tween_property(sprite, "scale", Vector2(0.115, 0.115), 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	tween.tween_property(sprite, "scale", Vector2(0.11, 0.11), 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 
 func finalizar_juego() -> void:
 	var total_notas: int = (
